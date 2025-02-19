@@ -1,69 +1,113 @@
-body {
-    font-family: Arial, sans-serif;
+/* Resetting margin and padding */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
     background-color: #f4f4f9;
     color: #333;
 }
 
+/* Header Styles */
 header {
-    background-color: #009688;
-    color: white;
+    background-color: #FFD700; /* Yellow from the Colombian flag */
     text-align: center;
-    padding: 20px;
+    padding: 50px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+header h1 {
+    font-size: 3em;
+    color: #0033A0; /* Blue from the Colombian flag */
+    font-family: 'Pacifico', cursive;
 }
 
-nav ul li {
-    display: inline;
-    margin: 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
+header p {
+    font-size: 1.2em;
+    color: #C8102E; /* Red from the Colombian flag */
     font-weight: bold;
 }
 
-h1 {
-    margin: 0;
-}
-
-section {
+/* Menu Section */
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 50px;
     padding: 20px;
-    margin: 10px;
+}
+
+.dish {
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #009688;
-}
-
-.menu-item {
-    margin: 15px;
-    display: inline-block;
-    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     text-align: center;
-    vertical-align: top;
+    transition: transform 0.3s ease;
 }
 
-.menu-item img {
+.dish img {
     width: 100%;
-    border-radius: 8px;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 5px solid #0033A0;
 }
 
+.dish h2 {
+    font-size: 2em;
+    color: #0033A0;
+    margin: 20px 0;
+    font-family: 'Pacifico', cursive;
+}
+
+.dish p {
+    font-size: 1.2em;
+    color: #333;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.dish:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: #0033A0; /* Blue from the Colombian flag */
     color: white;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .menu {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .dish h2 {
+        font-size: 1.8em;
+    }
+
+    .dish p {
+        font-size: 1em;
+    }
 }
