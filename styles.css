@@ -10,7 +10,8 @@ body {
 header {
     padding: 20px;
     text-align: center;
-    background: linear-gradient(to right, #D50032 15%, #FFD100 70%, #D50032 15%); /* Fondo con rojo y amarillo */
+    background-color: #D50032; /* Color rojo estático */
+    position: relative; /* Mantener la posición para los cuadrados rojos */
 }
 
 .header-title {
@@ -51,11 +52,11 @@ header {
 
 /* Ubicación de los cuadrados rojos */
 .flag-left {
-    left: 0;
+    left: 15%; /* Colocamos el cuadrado izquierdo al 15% desde el borde izquierdo */
 }
 
 .flag-right {
-    right: 0;
+    right: 15%; /* Colocamos el cuadrado derecho al 15% desde el borde derecho */
 }
 
 /* Estilos del menú */
