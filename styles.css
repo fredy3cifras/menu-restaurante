@@ -13,6 +13,22 @@ header {
     padding: 20px;
 }
 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 h1 {
     margin: 0;
 }
@@ -29,14 +45,17 @@ h2 {
     color: #009688;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.menu-item {
+    margin: 15px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    vertical-align: top;
 }
 
-li {
-    padding: 8px;
-    font-size: 16px;
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
 }
 
 footer {
