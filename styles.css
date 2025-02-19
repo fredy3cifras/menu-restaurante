@@ -6,18 +6,18 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f9;
+    background-color: #f9f9f9;
     color: #333;
 }
 
 header {
     background-color: #FFD700;
     text-align: center;
-    padding: 50px 0;
+    padding: 40px;
 }
 
 header h1 {
-    font-size: 3.5em;
+    font-size: 3em;
     color: #0033A0;
     font-family: 'Pacifico', cursive;
 }
@@ -30,16 +30,15 @@ header p {
 
 .menu {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 30px;
     padding: 30px;
-    margin-top: 40px;
 }
 
 .dish {
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s ease;
@@ -47,27 +46,25 @@ header p {
 
 .dish img {
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
-    border-bottom: 5px solid #0033A0;
 }
 
 .dish h3 {
-    font-size: 2.5em;
+    font-size: 1.8em;
     color: #0033A0;
-    margin: 20px 0;
+    margin-top: 15px;
     font-family: 'Pacifico', cursive;
 }
 
 .dish p {
     font-size: 1.1em;
     color: #C8102E;
-    padding: 0 20px;
     margin-bottom: 20px;
 }
 
 .dish:hover {
-    transform: translateY(-10px);
+    transform: scale(1.05);
 }
 
 footer {
@@ -76,9 +73,4 @@ footer {
     background-color: #FFD700;
     color: #0033A0;
     font-size: 1.2em;
-    margin-top: 50px;
-}
-
-footer p {
-    font-family: 'Roboto', sans-serif;
 }
