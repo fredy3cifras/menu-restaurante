@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú Restaurante Colombiano</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -15,51 +15,200 @@
     <div class="menu">
         <!-- Sección Entradas -->
         <div class="category">
-            <h2 onclick="toggleCategory('entradas')">Entradas</h2>
-            <div id="entradas" class="category-content">
+            <h2>Entradas</h2>
+            <div class="category-content">
                 <div class="menu-item">
-                    <img src="https://example.com/arepa.jpg" alt="Arepa">
-                    <div class="item-info">
-                        <h3>Arepa</h3>
-                        <p>Deliciosa arepa rellena con queso y otros ingredientes tradicionales.</p>
-                    </div>
+                    <h3>Arepa</h3>
+                    <p>Deliciosa arepa rellena con queso y otros ingredientes tradicionales.</p>
                 </div>
                 <div class="menu-item">
-                    <img src="https://example.com/empanada.jpg" alt="Empanada">
-                    <div class="item-info">
-                        <h3>Empanada</h3>
-                        <p>Empanada crujiente rellena de carne, pollo o papa, ideal para compartir.</p>
-                    </div>
+                    <h3>Empanada</h3>
+                    <p>Empanada crujiente rellena de carne, pollo o papa, ideal para compartir.</p>
                 </div>
-                <!-- Agregar más entradas aquí -->
+                <div class="menu-item">
+                    <h3>Patacón</h3>
+                    <p>Delicioso plátano frito acompañado de hogao.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Chicharrón</h3>
+                    <p>Crujiente y sabroso chicharrón de cerdo.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Cachapa</h3>
+                    <p>Panecillo de maíz relleno de queso.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Ensalada de aguacate</h3>
+                    <p>Fresca ensalada con aguacate, cebolla y tomate.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Arepa con huevo</h3>
+                    <p>Arepa frita con huevo dentro, tradicional y deliciosa.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Empanada de pollo</h3>
+                    <p>Empanada rellena con pollo sazonado.</p>
+                </div>
             </div>
         </div>
 
-        <!-- Sección Platos Principales -->
+        <!-- Sección Platos principales -->
         <div class="category">
-            <h2 onclick="toggleCategory('platos')">Platos Principales</h2>
-            <div id="platos" class="category-content">
+            <h2>Platos Principales</h2>
+            <div class="category-content">
                 <div class="menu-item">
-                    <img src="https://example.com/ajiaco.jpg" alt="Ajiaco">
-                    <div class="item-info">
-                        <h3>Ajiaco</h3>
-                        <p>Un delicioso caldo con pollo, papa y mazorca, típico de Bogotá.</p>
-                    </div>
+                    <h3>Bandeja Paisa</h3>
+                    <p>Arroz, frijoles, carne, chicharrón y más, plato representativo de la región paisa.</p>
                 </div>
                 <div class="menu-item">
-                    <img src="https://example.com/sancocho.jpg" alt="Sancocho">
-                    <div class="item-info">
-                        <h3>Sancocho</h3>
-                        <p>Sopa espesa con carne, pollo o cerdo acompañada de arroz y aguacate.</p>
-                    </div>
+                    <h3>Ajiaco</h3>
+                    <p>Caldo con pollo, papa, mazorca y hierbas tradicionales, típico de Bogotá.</p>
                 </div>
-                <!-- Agregar más platos principales aquí -->
+                <div class="menu-item">
+                    <h3>Sancocho</h3>
+                    <p>Sopa espesa con carne, pollo o cerdo, acompañada de arroz y aguacate.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Lechona</h3>
+                    <p>Cerdo relleno con arroz y especias, típico de la región de Tolima.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Cazuela de mariscos</h3>
+                    <p>Sopa espesa con mariscos, papas, y verduras.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Arroz con pollo</h3>
+                    <p>Plato tradicional con arroz, pollo y verduras.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Chuleta Valluna</h3>
+                    <p>Chuleta empanada acompañada de arroz y ensalada.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Pechuga a la plancha</h3>
+                    <p>Deliciosa pechuga de pollo a la plancha acompañada de ensalada.</p>
+                </div>
             </div>
         </div>
 
-        <!-- Otras secciones: Postres, Bebidas, Batidos -->
-        <!-- Puedes agregar las mismas secciones para los demás platos -->
+        <!-- Sección Postres -->
+        <div class="category">
+            <h2>Postres</h2>
+            <div class="category-content">
+                <div class="menu-item">
+                    <h3>Arequipe</h3>
+                    <p>Dulce de leche espeso, delicioso para acompañar cualquier plato.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Postre de Natas</h3>
+                    <p>Dulce típico de la región Andina hecho con nata y azúcar.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Tres Leches</h3>
+                    <p>Bizcocho húmedo bañado en tres tipos de leche, una delicia para los golosos.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Helado de Pargo</h3>
+                    <p>Helado tradicional con sabor a frutas tropicales.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Galletas de avena</h3>
+                    <p>Galletas crujientes y saludables de avena y miel.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Chocoramo</h3>
+                    <p>Bizcocho cubierto con chocolate, uno de los dulces más queridos en Colombia.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Flan</h3>
+                    <p>Flan casero con caramelo, suave y delicioso.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Obleas</h3>
+                    <p>Galletas crujientes rellenas de arequipe y otros ingredientes dulces.</p>
+                </div>
+            </div>
+        </div>
 
+        <!-- Sección Bebidas -->
+        <div class="category">
+            <h2>Bebidas</h2>
+            <div class="category-content">
+                <div class="menu-item">
+                    <h3>Aguapanela</h3>
+                    <p>Bebida dulce hecha a base de panela disuelta en agua caliente, acompañada de limón.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Jugo de Lulo</h3>
+                    <p>Refrescante jugo hecho con la fruta tropical Lulo, muy popular en Colombia.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Jugo de Maracuyá</h3>
+                    <p>Jugo ácido y refrescante de la fruta maracuyá.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Refajo</h3>
+                    <p>Combinación de cerveza y gaseosa colombiana, bebida típica en las fiestas.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Jugo de Mango</h3>
+                    <p>Delicioso y dulce jugo de mango, refrescante y natural.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Agua de Coco</h3>
+                    <p>Refrescante agua natural extraída del coco.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Cerveza</h3>
+                    <p>Bebida alcohólica muy popular en Colombia, ideal para acompañar la comida.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Jugo de Papaya</h3>
+                    <p>Jugo tropical y suave, muy nutritivo.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección Batidos -->
+        <div class="category">
+            <h2>Batidos</h2>
+            <div class="category-content">
+                <div class="menu-item">
+                    <h3>Batido de Fresa</h3>
+                    <p>Delicioso batido cremoso de fresas frescas.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Batido de Mora</h3>
+                    <p>Refrescante batido de mora, una fruta típica de Colombia.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Batido de Coco</h3>
+                    <p>Suave y dulce batido hecho con leche de coco y azúcar.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Batido de Guanábana</h3>
+                    <p>Batido con una fruta exótica muy común en Colombia.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Batido de Papaya</h3>
+                    <p>Batido suave y nutritivo con papaya fresca.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Batido de Mango</h3>
+                    <p>Batido tropical hecho con mango maduro.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Batido de Piña</h3>
+                    <p>Batido dulce y refrescante de piña natural.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Batido de Lulo</h3>
+                    <p>Batido refrescante con el sabor único del lulo.</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
