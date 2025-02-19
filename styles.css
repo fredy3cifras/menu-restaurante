@@ -10,8 +10,8 @@ body {
 header {
     padding: 20px;
     text-align: center;
-    background-color: #D50032; /* Color rojo estático */
-    position: relative; /* Mantener la posición para los cuadrados rojos */
+    background: linear-gradient(to right, #D50032 10%, #FFD100 10%, #FFD100 90%, #D50032 90%); /* Fondo con rojo y amarillo */
+    position: relative; /* Mantener la posición para el contenido */
 }
 
 .header-title {
@@ -37,26 +37,6 @@ header {
     .header-title h1 {
         font-size: 2em; /* Reducción del tamaño de la fuente en dispositivos móviles */
     }
-}
-
-/* Detalles visuales de los "cuadrados" rojos */
-.flag-left, .flag-right {
-    width: 50px;
-    height: 30px;
-    background-color: #D50032; /* Rojo bandera de Colombia */
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-/* Ubicación de los cuadrados rojos */
-.flag-left {
-    left: 15%; /* Colocamos el cuadrado izquierdo al 15% desde el borde izquierdo */
-}
-
-.flag-right {
-    right: 15%; /* Colocamos el cuadrado derecho al 15% desde el borde derecho */
 }
 
 /* Estilos del menú */
