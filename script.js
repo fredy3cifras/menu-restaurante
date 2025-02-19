@@ -1,9 +1,6 @@
-// Mostrar y ocultar el contenido de cada categoría
-const categories = document.querySelectorAll('.category h2');
-
-categories.forEach(category => {
-    category.addEventListener('click', () => {
-        const content = category.nextElementSibling;
+document.querySelectorAll('.category h2').forEach((header) => {
+    header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
         content.classList.toggle('show');
     });
 });
