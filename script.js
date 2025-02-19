@@ -1,5 +1,10 @@
-function toggleCategory(categoryId) {
-    var categoryContent = document.getElementById(categoryId);
-    categoryContent.classList.toggle('show');
-}
+document.addEventListener('DOMContentLoaded', function () {
+    const categories = document.querySelectorAll('.category');
 
+    categories.forEach(function (category) {
+        category.addEventListener('click', function () {
+            const content = category.nextElementSibling;
+            content.classList.toggle('show');
+        });
+    });
+});
