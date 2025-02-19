@@ -3,235 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú de Restaurante Colombiano</title>
+    <title>Menú Restaurante Colombiano</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
-        <h1>Menú de Restaurante Colombiano</h1>
+        <h1>Menú del Restaurante Colombiano</h1>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#entradas">Entradas</a></li>
-            <li><a href="#platos-principales">Platos Principales</a></li>
-            <li><a href="#postres">Postres</a></li>
-            <li><a href="#bebidas">Bebidas</a></li>
-            <li><a href="#batidos">Batidos</a></li>
-            <li><a href="#especiales">Especiales</a></li>
-        </ul>
-    </nav>
+    <div class="menu">
+        <!-- Categorías del menú -->
+        <div class="category" id="entradas">
+            <h2 onclick="toggleCategory('entradas')">Entradas</h2>
+            <div class="category-content">
+                <div class="menu-item">
+                    <img src="imagenes/empanada.jpg" alt="Empanada">
+                    <div class="item-info">
+                        <h3>Empanada</h3>
+                        <p>Empanada crujiente rellena de carne, pollo o papa.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="imagenes/arepa.jpg" alt="Arepa">
+                    <div class="item-info">
+                        <h3>Arepa</h3>
+                        <p>Deliciosa arepa rellena con queso y otros ingredientes tradicionales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <main>
-        <section id="entradas">
-            <h2>Entradas</h2>
-            <div class="menu-item">
-                <img src="empanada.jpg" alt="Empanada">
-                <div>
-                    <h3>Empanada</h3>
-                    <p>Empanada crujiente rellena de carne, pollo o papa.</p>
+        <div class="category" id="platos-principales">
+            <h2 onclick="toggleCategory('platos-principales')">Platos Principales</h2>
+            <div class="category-content">
+                <div class="menu-item">
+                    <img src="imagenes/bandeja_paisa.jpg" alt="Bandeja Paisa">
+                    <div class="item-info">
+                        <h3>Bandeja Paisa</h3>
+                        <p>El plato más representativo de la región paisa, con arroz, frijoles, carne, chicharrón y más.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="imagenes/ajiaco.jpg" alt="Ajiaco">
+                    <div class="item-info">
+                        <h3>Ajiaco</h3>
+                        <p>Un delicioso caldo con pollo, papa y mazorca, típico de Bogotá.</p>
+                    </div>
                 </div>
             </div>
-            <div class="menu-item">
-                <img src="arepa.jpg" alt="Arepa">
-                <div>
-                    <h3>Arepa con Queso</h3>
-                    <p>Deliciosa arepa rellena con queso fresco y otros ingredientes.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="patacon.jpg" alt="Patacón">
-                <div>
-                    <h3>Patacón</h3>
-                    <p>Plátano verde frito, acompañado de guacamole.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="tamales.jpg" alt="Tamales">
-                <div>
-                    <h3>Tamales</h3>
-                    <p>Rellenos de carne, pollo o cerdo con arroz y vegetales.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="almojabanas.jpg" alt="Almojábanas">
-                <div>
-                    <h3>Almojábanas</h3>
-                    <p>Panecillos suaves de maíz y queso.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="empanaditas.jpg" alt="Empanaditas">
-                <div>
-                    <h3>Empanaditas de Carne</h3>
-                    <p>Mini empanadas rellenas de carne, pollo o papa.</p>
-                </div>
-            </div>
-        </section>
+        </div>
 
-        <section id="platos-principales">
-            <h2>Platos Principales</h2>
-            <div class="menu-item">
-                <img src="bandeja_paisa.jpg" alt="Bandeja Paisa">
-                <div>
-                    <h3>Bandeja Paisa</h3>
-                    <p>Arroz, frijoles, carne, chicharrón, arepa, y más.</p>
+        <div class="category" id="postres">
+            <h2 onclick="toggleCategory('postres')">Postres</h2>
+            <div class="category-content">
+                <div class="menu-item">
+                    <img src="imagenes/arequipe.jpg" alt="Arequipe">
+                    <div class="item-info">
+                        <h3>Arequipe</h3>
+                        <p>Dulce tradicional de leche condensada, similar al dulce de leche.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="imagenes/torta.jpg" alt="Torta de tres leches">
+                    <div class="item-info">
+                        <h3>Torta de tres leches</h3>
+                        <p>Deliciosa torta empapada con tres tipos de leche, una delicia para el paladar.</p>
+                    </div>
                 </div>
             </div>
-            <div class="menu-item">
-                <img src="ajiaco.jpg" alt="Ajiaco">
-                <div>
-                    <h3>Ajiaco</h3>
-                    <p>Caldo con pollo, papas y mazorca, tradicional de Bogotá.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="sancocho.jpg" alt="Sancocho">
-                <div>
-                    <h3>Sancocho</h3>
-                    <p>Sopa espesa con carne, pollo o cerdo, acompañada de arroz.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="lechona.jpg" alt="Lechona">
-                <div>
-                    <h3>Lechona</h3>
-                    <p>Cerdo asado relleno de arroz y especias.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="arroz_pollo.jpg" alt="Arroz con Pollo">
-                <div>
-                    <h3>Arroz con Pollo</h3>
-                    <p>Arroz preparado con pollo y vegetales frescos.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="pargo_frito.jpg" alt="Pargo Frito">
-                <div>
-                    <h3>Pargo Frito</h3>
-                    <p>Delicioso pescado frito, acompañado de papas y ensalada.</p>
-                </div>
-            </div>
-        </section>
+        </div>
 
-        <section id="postres">
-            <h2>Postres</h2>
-            <div class="menu-item">
-                <img src="arequipe.jpg" alt="Arequipe">
-                <div>
-                    <h3>Arequipe</h3>
-                    <p>Dulce de leche cremoso, tradicional en Colombia.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="torta_chocolate.jpg" alt="Torta de Chocolate">
-                <div>
-                    <h3>Torta de Chocolate</h3>
-                    <p>Suave torta de chocolate con crema de chocolate.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="buñuelos.jpg" alt="Buñuelos">
-                <div>
-                    <h3>Buñuelos</h3>
-                    <p>Deliciosos bollos fritos hechos con queso.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="helado_lulo.jpg" alt="Helado de Lulo">
-                <div>
-                    <h3>Helado de Lulo</h3>
-                    <p>Helado refrescante a base de la fruta tropical Lulo.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="cocadas.jpg" alt="Cocadas">
-                <div>
-                    <h3>Cocadas</h3>
-                    <p>Dulce tradicional colombiano a base de coco rallado y azúcar.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="postre_natas.jpg" alt="Postre de Natas">
-                <div>
-                    <h3>Postre de Natas</h3>
-                    <p>Postre cremoso hecho a base de nata de leche.</p>
-                </div>
-            </div>
-        </section>
+        <!-- Agrega más categorías según sea necesario -->
 
-        <section id="bebidas">
-            <h2>Bebidas</h2>
-            <div class="menu-item">
-                <img src="jugos_frescos.jpg" alt="Jugos Frescos">
-                <div>
-                    <h3>Jugos Frescos</h3>
-                    <p>Jugos naturales de frutas frescas como mango y guanábana.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="aguapanela.jpg" alt="Aguapanela">
-                <div>
-                    <h3>Aguapanela</h3>
-                    <p>Bebida caliente hecha con panela disuelta en agua.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="limonada_coco.jpg" alt="Limonada de Coco">
-                <div>
-                    <h3>Limonada de Coco</h3>
-                    <p>Refrescante limonada con un toque de coco.</p>
-                </div>
-            </div>
-        </section>
+    </div>
 
-        <section id="batidos">
-            <h2>Batidos</h2>
-            <div class="menu-item">
-                <img src="batido_mango.jpg" alt="Batido de Mango">
-                <div>
-                    <h3>Batido de Mango</h3>
-                    <p>Batido suave y refrescante de mango.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="batido_fresa.jpg" alt="Batido de Fresa">
-                <div>
-                    <h3>Batido de Fresa</h3>
-                    <p>Batido cremoso y delicioso de fresas frescas.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="batido_papaya.jpg" alt="Batido de Papaya">
-                <div>
-                    <h3>Batido de Papaya</h3>
-                    <p>Batido dulce y refrescante de papaya.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="especiales">
-            <h2>Especiales</h2>
-            <div class="menu-item">
-                <img src="sopa_mote.jpg" alt="Sopa de Mote">
-                <div>
-                    <h3>Sopa de Mote</h3>
-                    <p>Tradicional sopa colombiana a base de mote de maíz.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="chicha.jpg" alt="Chicha">
-                <div>
-                    <h3>Chicha</h3>
-                    <p>Bebida fermentada de maíz, típica de algunas regiones colombianas.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Restaurante Colombiano</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
