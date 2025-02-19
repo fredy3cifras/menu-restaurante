@@ -1,9 +1,9 @@
 /* Estilos generales */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #f1f1f1;
     color: #333;
 }
 
@@ -15,8 +15,7 @@ header {
 
 h1 {
     color: #0033A0; /* Azul bandera de Colombia */
-    font-family: 'Pacifico', cursive;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 /* Estilos del menú */
@@ -25,20 +24,13 @@ h1 {
 }
 
 .category h2 {
-    background-color: #0033A0; /* Azul bandera de Colombia */
+    background-color: #0033A0;
     color: white;
-    padding: 20px;
+    padding: 15px;
     cursor: pointer;
     text-align: center;
-    font-size: 2em;
-    border-radius: 10px;
-    margin: 20px 0;
-    transition: background-color 0.3s ease;
-}
-
-.category h2:hover {
-    background-color: #FFD100; /* Cambia a amarillo cuando se pasa el cursor */
-    color: #0033A0;
+    border-radius: 5px;
+    margin: 10px 0;
 }
 
 .category-content {
@@ -46,22 +38,24 @@ h1 {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
 }
 
 .menu-item {
+    display: flex;
     margin-bottom: 20px;
+}
+
+.item-info {
+    max-width: 500px;
 }
 
 h3 {
     color: #0033A0;
     font-size: 1.8em;
-    margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
 }
 
 p {
-    font-size: 1.1em;
+    font-size: 1em;
     color: #555;
 }
 
