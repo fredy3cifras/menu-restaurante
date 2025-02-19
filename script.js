@@ -1,10 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const categories = document.querySelectorAll('.category h2');
-    
-    categories.forEach(category => {
-        category.addEventListener('click', function() {
-            const categoryContent = category.nextElementSibling;
-            categoryContent.classList.toggle('show');
-        });
-    });
-});
+// Función para mostrar y ocultar las categorías al hacer clic
+function toggleCategory(categoryId) {
+    const categoryContent = document.getElementById(categoryId);
+    categoryContent.classList.toggle('show');
+}
