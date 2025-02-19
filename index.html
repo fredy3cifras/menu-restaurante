@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú Restaurante Colombiano</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -12,112 +13,53 @@
     </header>
 
     <div class="menu">
-        <!-- Categoría: Entradas -->
+        <!-- Sección Entradas -->
         <div class="category">
-            <h2>Entradas</h2>
-            <div class="category-content">
+            <h2 onclick="toggleCategory('entradas')">Entradas</h2>
+            <div id="entradas" class="category-content">
                 <div class="menu-item">
-                    <img src="https://www.example.com/arepa.jpg" alt="Arepa">
+                    <img src="https://example.com/arepa.jpg" alt="Arepa">
                     <div class="item-info">
                         <h3>Arepa</h3>
                         <p>Deliciosa arepa rellena con queso y otros ingredientes tradicionales.</p>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <img src="https://www.example.com/empanada.jpg" alt="Empanada">
+                    <img src="https://example.com/empanada.jpg" alt="Empanada">
                     <div class="item-info">
                         <h3>Empanada</h3>
                         <p>Empanada crujiente rellena de carne, pollo o papa, ideal para compartir.</p>
                     </div>
                 </div>
+                <!-- Agregar más entradas aquí -->
             </div>
         </div>
 
-        <!-- Categoría: Platos Principales -->
+        <!-- Sección Platos Principales -->
         <div class="category">
-            <h2>Platos Principales</h2>
-            <div class="category-content">
+            <h2 onclick="toggleCategory('platos')">Platos Principales</h2>
+            <div id="platos" class="category-content">
                 <div class="menu-item">
-                    <img src="https://www.example.com/ajiaco.jpg" alt="Ajiaco">
+                    <img src="https://example.com/ajiaco.jpg" alt="Ajiaco">
                     <div class="item-info">
                         <h3>Ajiaco</h3>
                         <p>Un delicioso caldo con pollo, papa y mazorca, típico de Bogotá.</p>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <img src="https://www.example.com/sancocho.jpg" alt="Sancocho">
+                    <img src="https://example.com/sancocho.jpg" alt="Sancocho">
                     <div class="item-info">
                         <h3>Sancocho</h3>
                         <p>Sopa espesa con carne, pollo o cerdo acompañada de arroz y aguacate.</p>
                     </div>
                 </div>
+                <!-- Agregar más platos principales aquí -->
             </div>
         </div>
 
-        <!-- Categoría: Postres -->
-        <div class="category">
-            <h2>Postres</h2>
-            <div class="category-content">
-                <div class="menu-item">
-                    <img src="https://www.example.com/tresleches.jpg" alt="Postre Tres Leches">
-                    <div class="item-info">
-                        <h3>Tres Leches</h3>
-                        <p>Un delicioso pastel de tres leches cubierto con crema batida.</p>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="https://www.example.com/arequipe.jpg" alt="Arequipe">
-                    <div class="item-info">
-                        <h3>Arequipe</h3>
-                        <p>Dulce de leche cremoso, delicioso para acompañar con galletas o pan.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Otras secciones: Postres, Bebidas, Batidos -->
+        <!-- Puedes agregar las mismas secciones para los demás platos -->
 
-        <!-- Categoría: Bebidas -->
-        <div class="category">
-            <h2>Bebidas</h2>
-            <div class="category-content">
-                <div class="menu-item">
-                    <img src="https://www.example.com/aguapanela.jpg" alt="Aguapanela">
-                    <div class="item-info">
-                        <h3>Aguapanela</h3>
-                        <p>Bebida dulce hecha con panela, ideal para el clima frío de Colombia.</p>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="https://www.example.com/jugo.jpg" alt="Jugo Natural">
-                    <div class="item-info">
-                        <h3>Jugo Natural</h3>
-                        <p>Deliciosos jugos naturales de frutas frescas como lulo, maracuyá y guanábana.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Categoría: Batidos -->
-        <div class="category">
-            <h2>Batidos</h2>
-            <div class="category-content">
-                <div class="menu-item">
-                    <img src="https://www.example.com/batido.jpg" alt="Batido de Fruta">
-                    <div class="item-info">
-                        <h3>Batido de Fruta</h3>
-                        <p>Batido cremoso con frutas frescas, perfecto para refrescarte.</p>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="https://www.example.com/batidochocolate.jpg" alt="Batido de Chocolate">
-                    <div class="item-info">
-                        <h3>Batido de Chocolate</h3>
-                        <p>Delicioso batido de chocolate con leche, ideal para los amantes del dulce.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
