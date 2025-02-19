@@ -4,80 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú Restaurante Colombiano</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula tu archivo CSS -->
 </head>
 <body>
 
     <header>
-        <h1>Menú del Restaurante Colombiano</h1>
+        <h1>Menú Restaurante Colombiano</h1>
     </header>
 
     <div class="menu">
-        <!-- Categorías del menú -->
-        <div class="category" id="entradas">
+
+        <!-- Sección de Entradas -->
+        <div class="category">
             <h2 onclick="toggleCategory('entradas')">Entradas</h2>
-            <div class="category-content">
+            <div id="entradas" class="category-content">
                 <div class="menu-item">
-                    <img src="imagenes/empanada.jpg" alt="Empanada">
-                    <div class="item-info">
-                        <h3>Empanada</h3>
-                        <p>Empanada crujiente rellena de carne, pollo o papa.</p>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="imagenes/arepa.jpg" alt="Arepa">
+                    <img src="images/arepa.jpg" alt="Arepa">
                     <div class="item-info">
                         <h3>Arepa</h3>
                         <p>Deliciosa arepa rellena con queso y otros ingredientes tradicionales.</p>
                     </div>
                 </div>
+                <!-- Agregar más platos aquí -->
             </div>
         </div>
 
-        <div class="category" id="platos-principales">
+        <!-- Sección de Platos Principales -->
+        <div class="category">
             <h2 onclick="toggleCategory('platos-principales')">Platos Principales</h2>
-            <div class="category-content">
+            <div id="platos-principales" class="category-content">
                 <div class="menu-item">
-                    <img src="imagenes/bandeja_paisa.jpg" alt="Bandeja Paisa">
+                    <img src="images/bandeja-paisa.jpg" alt="Bandeja Paisa">
                     <div class="item-info">
                         <h3>Bandeja Paisa</h3>
-                        <p>El plato más representativo de la región paisa, con arroz, frijoles, carne, chicharrón y más.</p>
+                        <p>El plato más representativo de la región paisa.</p>
                     </div>
                 </div>
-                <div class="menu-item">
-                    <img src="imagenes/ajiaco.jpg" alt="Ajiaco">
-                    <div class="item-info">
-                        <h3>Ajiaco</h3>
-                        <p>Un delicioso caldo con pollo, papa y mazorca, típico de Bogotá.</p>
-                    </div>
-                </div>
+                <!-- Agregar más platos aquí -->
             </div>
         </div>
 
-        <div class="category" id="postres">
-            <h2 onclick="toggleCategory('postres')">Postres</h2>
-            <div class="category-content">
-                <div class="menu-item">
-                    <img src="imagenes/arequipe.jpg" alt="Arequipe">
-                    <div class="item-info">
-                        <h3>Arequipe</h3>
-                        <p>Dulce tradicional de leche condensada, similar al dulce de leche.</p>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="imagenes/torta.jpg" alt="Torta de tres leches">
-                    <div class="item-info">
-                        <h3>Torta de tres leches</h3>
-                        <p>Deliciosa torta empapada con tres tipos de leche, una delicia para el paladar.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Agrega más categorías según sea necesario -->
+        <!-- Más secciones como Postres, Bebidas, etc. -->
 
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Vincula tu archivo JS -->
 </body>
 </html>
