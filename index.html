@@ -4,125 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú Restaurante Colombiano</title>
-    <link rel="stylesheet" href="styles.css">  <!-- Vincula el archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
+<header>
+    <div class="header-title">
+        <div class="flag-left"></div>
         <h1>Menú Restaurante Colombiano</h1>
-    </header>
+        <div class="flag-right"></div>
+    </div>
+</header>
 
-    <div class="menu">
-        <!-- Entradas -->
-        <div class="category">
-            <h2>Entradas</h2>
-            <div class="category-content">
-                <div class="menu-item">
-                    <div class="item-info">
-                        <h3>Arepa</h3>
-                        <p>Deliciosa arepa rellena con queso y otros ingredientes tradicionales.</p>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <div class="item-info">
-                        <h3>Empanada</h3>
-                        <p>Empanada crujiente rellena de carne, pollo o papa, ideal para compartir.</p>
-                    </div>
+<div class="menu">
+    <!-- Sección de Entradas -->
+    <div class="category">
+        <h2>Entradas</h2>
+        <div class="category-content">
+            <div class="menu-item">
+                <img src="imagen_arepa.jpg" alt="Arepa">
+                <div class="item-info">
+                    <h3>Arepa</h3>
+                    <p>Deliciosa arepa rellena con queso y otros ingredientes tradicionales.</p>
                 </div>
             </div>
-        </div>
-
-        <!-- Platos principales -->
-        <div class="category">
-            <h2>Platos Principales</h2>
-            <div class="category-content">
-                <div class="menu-item">
-                    <div class="item-info">
-                        <h3>Ajiaco</h3>
-                        <p>Un delicioso caldo con pollo, papa y mazorca, típico de Bogotá.</p>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <div class="item-info">
-                        <h3>Sancocho</h3>
-                        <p>Sopa espesa con carne, pollo o cerdo acompañada de arroz y aguacate.</p>
-                    </div>
+            <div class="menu-item">
+                <img src="imagen_empanada.jpg" alt="Empanada">
+                <div class="item-info">
+                    <h3>Empanada</h3>
+                    <p>Empanada crujiente rellena de carne, pollo o papa, ideal para compartir.</p>
                 </div>
             </div>
-        </div>
-
-        <!-- Postres -->
-        <div class="category">
-            <h2>Postres</h2>
-            <div class="category-content">
-                <div class="menu-item">
-                    <div class="item-info">
-                        <h3>Arroz con leche</h3>
-                        <p>Delicioso postre tradicional a base de arroz, leche y canela.</p>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <div class="item-info">
-                        <h3>Arequipe</h3>
-                        <p>Dulce de leche cremoso, ideal para acompañar galletas o pan.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bebidas -->
-        <div class="category">
-            <h2>Bebidas</h2>
-            <div class="category-content">
-                <div class="menu-item">
-                    <div class="item-info">
-                        <h3>Jugo de Lulo</h3>
-                        <p>Refrescante jugo preparado con lulo, una fruta tropical colombiana.</p>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <div class="item-info">
-                        <h3>Agua de Panela</h3>
-                        <p>Bebida dulce y energética hecha con panela disuelta en agua caliente.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Batidos -->
-        <div class="category">
-            <h2>Batidos</h2>
-            <div class="category-content">
-                <div class="menu-item">
-                    <div class="item-info">
-                        <h3>Batido de Mango</h3>
-                        <p>Batido cremoso y refrescante preparado con mango natural.</p>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <div class="item-info">
-                        <h3>Batido de Guanábana</h3>
-                        <p>Delicioso batido a base de guanábana, una fruta tropical.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Especiales -->
-        <div class="category">
-            <h2>Especiales</h2>
-            <div class="category-content">
-                <div class="menu-item">
-                    <div class="item-info">
-                        <h3>Bandeja Paisa</h3>
-                        <p>El plato más representativo de la región paisa, con arroz, frijoles, carne, chicharrón y más.</p>
-                    </div>
-                </div>
-            </div>
+            <!-- Agregar más platos aquí -->
         </div>
     </div>
 
-    <script src="script.js"></script> <!-- Vincula el archivo JavaScript -->
+    <!-- Sección de Platos Principales -->
+    <div class="category">
+        <h2>Platos Principales</h2>
+        <div class="category-content">
+            <div class="menu-item">
+                <img src="imagen_ajiaco.jpg" alt="Ajiaco">
+                <div class="item-info">
+                    <h3>Ajiaco</h3>
+                    <p>Un delicioso caldo con pollo, papa y mazorca, típico de Bogotá.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="imagen_sancocho.jpg" alt="Sancocho">
+                <div class="item-info">
+                    <h3>Sancocho</h3>
+                    <p>Sopa espesa con carne, pollo o cerdo acompañada de arroz y aguacate.</p>
+                </div>
+            </div>
+            <!-- Agregar más platos aquí -->
+        </div>
+    </div>
 
+    <!-- Sección de Postres -->
+    <div class="category">
+        <h2>Postres</h2>
+        <div class="category-content">
+            <div class="menu-item">
+                <img src="imagen_arroz_con_leche.jpg" alt="Arroz con leche">
+                <div class="item-info">
+                    <h3>Arroz con leche</h3>
+                    <p>Postre tradicional colombiano hecho con arroz, leche, canela y azúcar.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="imagen_arequipe.jpg" alt="Arequipe">
+                <div class="item-info">
+                    <h3>Arequipe</h3>
+                    <p>Dulce de leche colombiano, ideal para untar o comer solo.</p>
+                </div>
+            </div>
+            <!-- Agregar más platos aquí -->
+        </div>
+    </div>
+
+    <!-- Sección de Bebidas -->
+    <div class="category">
+        <h2>Bebidas</h2>
+        <div class="category-content">
+            <div class="menu-item">
+                <img src="imagen_jugo_lulo.jpg" alt="Jugo de Lulo">
+                <div class="item-info">
+                    <h3>Jugo de Lulo</h3>
+                    <p>Bebida refrescante hecha con la fruta de lulo, típica de la región andina.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="imagen_agua_de_panela.jpg" alt="Agua de Panela">
+                <div class="item-info">
+                    <h3>Agua de Panela</h3>
+                    <p>Bebida caliente hecha con panela, ideal para el frío.</p>
+                </div>
+            </div>
+            <!-- Agregar más bebidas aquí -->
+        </div>
+    </div>
+
+    <!-- Sección de Batidos -->
+    <div class="category">
+        <h2>Batidos</h2>
+        <div class="category-content">
+            <div class="menu-item">
+                <img src="imagen_batido_mango.jpg" alt="Batido de Mango">
+                <div class="item-info">
+                    <h3>Batido de Mango</h3>
+                    <p>Delicioso batido hecho con mango fresco y leche.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="imagen_batido_guanabana.jpg" alt="Batido de Guanábana">
+                <div class="item-info">
+                    <h3>Batido de Guanábana</h3>
+                    <p>Batido refrescante y cremoso hecho con guanábana.</p>
+                </div>
+            </div>
+            <!-- Agregar más batidos aquí -->
+        </div>
+    </div>
+
+    <!-- Sección Especiales -->
+    <div class="category">
+        <h2>Especiales</h2>
+        <div class="category-content">
+            <div class="menu-item">
+                <img src="imagen_bandeja_paisa.jpg" alt="Bandeja Paisa">
+                <div class="item-info">
+                    <h3>Bandeja Paisa</h3>
+                    <p>El plato más representativo de la región paisa, con arroz, frijoles, carne, chicharrón y más.</p>
+                </div>
+            </div>
+            <!-- Agregar más platos especiales aquí -->
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
