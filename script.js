@@ -1,13 +1,9 @@
-// JavaScript para desplegar el contenido de cada sección
-document.addEventListener("DOMContentLoaded", function () {
-    const categories = document.querySelectorAll('.category');
+// Mostrar y ocultar el contenido de cada categoría
+const categories = document.querySelectorAll('.category h2');
 
-    categories.forEach(category => {
-        const header = category.querySelector('h2');
-        const content = category.querySelector('.category-content');
-
-        header.addEventListener('click', () => {
-            content.classList.toggle('show');
-        });
+categories.forEach(category => {
+    category.addEventListener('click', () => {
+        const content = category.nextElementSibling;
+        content.classList.toggle('show');
     });
 });
