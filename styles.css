@@ -1,76 +1,96 @@
-* {
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #FFD700;
+    background-color: #fcd000; /* Color amarillo bandera de Colombia */
+    color: #0033a0; /* Azul bandera de Colombia */
     text-align: center;
-    padding: 40px;
+    padding: 20px 0;
 }
 
-header h1 {
-    font-size: 3em;
-    color: #0033A0;
-    font-family: 'Pacifico', cursive;
+h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-header p {
-    font-size: 1.5em;
-    color: #C8102E;
+nav {
+    background-color: #0033a0;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
     font-weight: bold;
 }
 
-.menu {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 30px;
+main {
+    padding: 20px;
 }
 
-.dish {
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #0033a0;
     text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.dish img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.dish h3 {
-    font-size: 1.8em;
-    color: #0033A0;
-    margin-top: 15px;
-    font-family: 'Pacifico', cursive;
-}
-
-.dish p {
-    font-size: 1.1em;
-    color: #C8102E;
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
-.dish:hover {
-    transform: scale(1.05);
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
 }
 
+.menu-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.menu-item div {
+    flex: 1;
+}
+
+.menu-item h3 {
+    color: #0033a0;
+    font-size: 1.5em;
+}
+
+.menu-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Estilos para el pie de página */
 footer {
+    background-color: #0033a0;
+    color: white;
     text-align: center;
     padding: 20px;
-    background-color: #FFD700;
-    color: #0033A0;
-    font-size: 1.2em;
 }
