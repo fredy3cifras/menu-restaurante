@@ -15,22 +15,50 @@ header {
 
 .header-title {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
 .header-title h1 {
     color: #0033A0; /* Azul bandera de Colombia */
-    font-size: 3em;
+    font-size: 4em; /* Título más grande */
+    font-weight: bold;
     margin: 0;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para dar más profundidad */
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
 }
 
+/* Estilo adicional para hacer que el texto del título se destaque */
+.header-title h1:hover {
+    color: #FFD100; /* Cambio de color a amarillo al pasar el cursor */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* Aumenta la sombra al pasar el cursor */
+}
+
+/* Elementos de la bandera de Colombia (izquierda y derecha) */
 .flag-left, .flag-right {
-    width: 50px;
-    height: 30px;
+    width: 80px; /* Hago que las franjas sean más grandes */
+    height: 50px;
     background-color: #0033A0; /* Azul bandera de Colombia */
     display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.flag-left {
+    left: 0;
+    background-color: #FFD100; /* Amarillo bandera de Colombia */
+}
+
+.flag-right {
+    right: 0;
+    background-color: #F00D50; /* Rojo bandera de Colombia */
 }
 
 /* Estilos del menú */
