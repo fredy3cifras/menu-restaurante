@@ -1,4 +1,3 @@
-/* Resetting margin and padding */
 * {
     margin: 0;
     padding: 0;
@@ -11,32 +10,30 @@ body {
     color: #333;
 }
 
-/* Header Styles */
 header {
-    background-color: #FFD700; /* Yellow from the Colombian flag */
+    background-color: #FFD700;
     text-align: center;
-    padding: 50px;
+    padding: 50px 0;
 }
 
 header h1 {
-    font-size: 3em;
-    color: #0033A0; /* Blue from the Colombian flag */
+    font-size: 3.5em;
+    color: #0033A0;
     font-family: 'Pacifico', cursive;
 }
 
 header p {
-    font-size: 1.2em;
-    color: #C8102E; /* Red from the Colombian flag */
+    font-size: 1.5em;
+    color: #C8102E;
     font-weight: bold;
 }
 
-/* Menu Section */
 .menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    margin: 50px;
-    padding: 20px;
+    padding: 30px;
+    margin-top: 40px;
 }
 
 .dish {
@@ -55,59 +52,33 @@ header p {
     border-bottom: 5px solid #0033A0;
 }
 
-.dish h2 {
-    font-size: 2em;
+.dish h3 {
+    font-size: 2.5em;
     color: #0033A0;
     margin: 20px 0;
     font-family: 'Pacifico', cursive;
 }
 
 .dish p {
-    font-size: 1.2em;
-    color: #333;
-    padding: 0 15px;
+    font-size: 1.1em;
+    color: #C8102E;
+    padding: 0 20px;
     margin-bottom: 20px;
 }
 
 .dish:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
 }
 
-/* Footer Styles */
 footer {
-    background-color: #0033A0; /* Blue from the Colombian flag */
-    color: white;
     text-align: center;
     padding: 20px;
+    background-color: #FFD700;
+    color: #0033A0;
     font-size: 1.2em;
+    margin-top: 50px;
 }
 
-/* Responsive Design for Small Screens */
-@media (max-width: 768px) {
-    .menu {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .menu {
-        grid-template-columns: 1fr;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    header p {
-        font-size: 1em;
-    }
-
-    .dish h2 {
-        font-size: 1.8em;
-    }
-
-    .dish p {
-        font-size: 1em;
-    }
+footer p {
+    font-family: 'Roboto', sans-serif;
 }
