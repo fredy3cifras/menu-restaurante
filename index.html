@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Restaurante Colombiano</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Vincula tu archivo CSS -->
+    <title>Menú del Restaurante Colombiano</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
         <h1>Menú Restaurante Colombiano</h1>
     </header>
 
     <div class="menu">
-
-        <!-- Sección de Entradas -->
+        <!-- Categoría Entradas -->
         <div class="category">
-            <h2 onclick="toggleCategory('entradas')">Entradas</h2>
-            <div id="entradas" class="category-content">
+            <h2>Entradas</h2>
+            <div class="category-content">
                 <div class="menu-item">
                     <img src="images/arepa.jpg" alt="Arepa">
                     <div class="item-info">
@@ -25,29 +23,100 @@
                         <p>Deliciosa arepa rellena con queso y otros ingredientes tradicionales.</p>
                     </div>
                 </div>
-                <!-- Agregar más platos aquí -->
+                <div class="menu-item">
+                    <img src="images/empanada.jpg" alt="Empanada">
+                    <div class="item-info">
+                        <h3>Empanada</h3>
+                        <p>Empanada crujiente rellena de carne, pollo o papa.</p>
+                    </div>
+                </div>
+                <!-- Aquí agregarías los otros platos -->
             </div>
         </div>
 
-        <!-- Sección de Platos Principales -->
+        <!-- Categoría Platos Principales -->
         <div class="category">
-            <h2 onclick="toggleCategory('platos-principales')">Platos Principales</h2>
-            <div id="platos-principales" class="category-content">
+            <h2>Platos Principales</h2>
+            <div class="category-content">
                 <div class="menu-item">
                     <img src="images/bandeja-paisa.jpg" alt="Bandeja Paisa">
                     <div class="item-info">
                         <h3>Bandeja Paisa</h3>
-                        <p>El plato más representativo de la región paisa.</p>
+                        <p>Un plato típico de la región paisa con arroz, carne, chicharrón, frijoles, y más.</p>
                     </div>
                 </div>
-                <!-- Agregar más platos aquí -->
+                <div class="menu-item">
+                    <img src="images/ajiaco.jpg" alt="Ajiaco">
+                    <div class="item-info">
+                        <h3>Ajiaco</h3>
+                        <p>Caldo espeso con pollo, papa, mazorca y guasca, típico de Bogotá.</p>
+                    </div>
+                </div>
+                <!-- Aquí agregarías los otros platos -->
             </div>
         </div>
 
-        <!-- Más secciones como Postres, Bebidas, etc. -->
+        <!-- Categoría Postres -->
+        <div class="category">
+            <h2>Postres</h2>
+            <div class="category-content">
+                <div class="menu-item">
+                    <img src="images/arequipe.jpg" alt="Arequipe">
+                    <div class="item-info">
+                        <h3>Arequipe</h3>
+                        <p>Deliciosa crema de leche dulce, perfecta para acompañar postres.</p>
+                    </div>
+                </div>
+                <!-- Aquí agregarías los otros postres -->
+            </div>
+        </div>
 
+        <!-- Categoría Bebidas -->
+        <div class="category">
+            <h2>Bebidas</h2>
+            <div class="category-content">
+                <div class="menu-item">
+                    <img src="images/jugo-mora.jpg" alt="Jugo de Mora">
+                    <div class="item-info">
+                        <h3>Jugo de Mora</h3>
+                        <p>Delicioso jugo de mora natural, refrescante y dulce.</p>
+                    </div>
+                </div>
+                <!-- Aquí agregarías las otras bebidas -->
+            </div>
+        </div>
+
+        <!-- Categoría Batidos -->
+        <div class="category">
+            <h2>Batidos</h2>
+            <div class="category-content">
+                <div class="menu-item">
+                    <img src="images/batido-maracuya.jpg" alt="Batido de Maracuyá">
+                    <div class="item-info">
+                        <h3>Batido de Maracuyá</h3>
+                        <p>Batido refrescante de maracuyá, ideal para acompañar cualquier plato.</p>
+                    </div>
+                </div>
+                <!-- Aquí agregarías los otros batidos -->
+            </div>
+        </div>
+
+        <!-- Categoría Especiales -->
+        <div class="category">
+            <h2>Especiales</h2>
+            <div class="category-content">
+                <div class="menu-item">
+                    <img src="images/sancocho.jpg" alt="Sancocho">
+                    <div class="item-info">
+                        <h3>Sancocho</h3>
+                        <p>Sopa espesa de carne, pollo o cerdo, acompañada de arroz y aguacate.</p>
+                    </div>
+                </div>
+                <!-- Aquí agregarías los otros platos especiales -->
+            </div>
+        </div>
     </div>
 
-    <script src="script.js"></script> <!-- Vincula tu archivo JS -->
+    <script src="script.js"></script>
 </body>
 </html>
