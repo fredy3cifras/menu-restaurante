@@ -66,6 +66,13 @@ header {
     margin-bottom: 20px;
 }
 
+.menu-item img {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    margin-right: 15px;
+    border-radius: 8px; /* Opcional, para bordes redondeados */
+}
+
 .item-info {
     max-width: 500px;
 }
