@@ -6,7 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
     categories.forEach(category => {
         category.addEventListener("click", () => {
             const items = category.nextElementSibling;
-            items.style.display = items.style.display === "grid" ? "none" : "grid";
+            if (items.style.display === "none" || items.style.display === "") {
+                items.style.display = "grid";  // Mostrar ítems
+            } else {
+                items.style.display = "none";  // Ocultar ítems
+            }
         });
     });
 
