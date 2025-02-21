@@ -16,18 +16,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Filtrar elementos al escribir en el buscador
     searchBar.addEventListener("input", () => {
-        const query = searchBar.value.toLowerCase();
+        const query = searchBar.value.toLowerCase();  // Obtener el valor de la búsqueda
         const items = document.querySelectorAll(".menu-item");
 
+        // Recorremos todos los platos
         items.forEach(item => {
-            const name = item.querySelector("h3").textContent.toLowerCase();
-            const description = item.querySelector("p").textContent.toLowerCase();
-            
-            // Verificar si el nombre o la descripción incluyen la consulta
+            const name = item.querySelector("h3").textContent.toLowerCase();  // Nombre del plato
+            const description = item.querySelector("p").textContent.toLowerCase();  // Descripción del plato
+
+            // Si el nombre o la descripción coinciden con el término de búsqueda, lo mostramos
             if (name.includes(query) || description.includes(query)) {
-                item.style.display = "block";  // Mostrar el ítem si coincide
+                item.style.display = "block";  // Mostrar el plato
             } else {
-                item.style.display = "none";  // Ocultar el ítem si no coincide
+                item.style.display = "none";  // Ocultar el plato si no coincide
             }
         });
     });
