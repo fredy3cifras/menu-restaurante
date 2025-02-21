@@ -41,8 +41,8 @@ header h1 {
 }
 
 .menu-category h2 {
-    background: linear-gradient(90deg, rgba(255, 0, 0, 0.4), rgba(255, 255, 0, 0.4), rgba(255, 0, 0, 0.4)); /* Retaining the gradient effect */
-    color: rgba(0, 0, 255, 0.7);
+    background-color: blue; /* Blue background for categories */
+    color: white; /* White text color for category names */
     padding: 15px 0;
     margin: 0;
     cursor: pointer;
