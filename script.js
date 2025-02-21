@@ -1,8 +1,8 @@
-document.addEventListener("DOMContentLoaded", () => {
+ddocument.addEventListener("DOMContentLoaded", () => {
     const categories = document.querySelectorAll(".menu-category h2");
     const searchBar = document.getElementById("searchBar");
 
-    // Manejo de la visibilidad de las categorías (expandir/colapsar)
+    // Mostrar y ocultar los ítems de las categorías al hacer clic
     categories.forEach(category => {
         category.addEventListener("click", () => {
             const items = category.nextElementSibling;
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Manejo del evento de búsqueda
+    // Filtrar elementos al escribir en el buscador
     searchBar.addEventListener("input", () => {
         const query = searchBar.value.toLowerCase();
         const items = document.querySelectorAll(".menu-item");
@@ -18,11 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
         items.forEach(item => {
             const name = item.querySelector("h3").textContent.toLowerCase();
             const description = item.querySelector("p").textContent.toLowerCase();
-            // Si el nombre o la descripción incluyen la búsqueda, mostrar el item
+            
+            // Verificar si el nombre o la descripción incluyen la consulta
             if (name.includes(query) || description.includes(query)) {
-                item.style.display = "block";  // Aseguramos que el elemento sea visible
+                item.style.display = "block";  // Mostrar el ítem si coincide
             } else {
-                item.style.display = "none";  // Ocultamos el elemento si no coincide
+                item.style.display = "none";  // Ocultar el ítem si no coincide
             }
         });
     });
