@@ -3,7 +3,7 @@ body {
     background-color: #f5f5f5;
     margin: 0;
     padding: 0;
-    filter: brightness(1.10) saturate(1.15) contrast(1.15); /* Increase brightness, saturation, and contrast */
+    filter: brightness(1.10) saturate(1.25) contrast(1.25); /* Increase brightness, saturation, and contrast */
 }
 
 header {
