@@ -24,9 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const name = item.querySelector("h3").textContent.toLowerCase();  // Nombre del plato
             const description = item.querySelector("p").textContent.toLowerCase();  // Descripción del plato
 
-            // Si el nombre o la descripción coinciden con el término de búsqueda, lo mostramos
+            // Verificar si el nombre o la descripción contienen el término de búsqueda
             if (name.includes(query) || description.includes(query)) {
-                item.style.display = "block";  // Mostrar el plato
+                item.style.display = "block";  // Mostrar el plato que coincide con la búsqueda
             } else {
                 item.style.display = "none";  // Ocultar el plato si no coincide
             }
