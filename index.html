@@ -10,29 +10,42 @@
 
 <header>
     <div class="header-title">
+        <div class="flag-left"></div>
         <h1>Menú Restaurante Colombiano</h1>
+        <div class="flag-right"></div>
     </div>
 </header>
 
-<div class="search-container">
-    <input type="text" id="search-bar" placeholder="Buscar en el menú...">
-</div>
-
 <div class="menu">
+    <!-- Sección de Entradas -->
     <div class="category">
         <h2>Entradas</h2>
         <div class="category-content">
             <div class="menu-item">
-                <img src="images/arepa.webp" alt="Arepa" class="menu-image">
                 <div class="item-info">
                     <h3>Arepa</h3>
                     <p>Deliciosa arepa rellena con queso y otros ingredientes tradicionales.</p>
-                    <span class="price">$3.00</span>
+                    <span class="price">$3.00</span> <!-- Precio en dólares -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Platos Fuertes -->
+    <div class="category">
+        <h2>Platos Fuertes</h2>
+        <div class="category-content">
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Guiso de Pollo</h3>
+                    <p>Un delicioso guiso de pollo con papas y mazorca.</p>
+                    <span class="price">$7.50</span>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
