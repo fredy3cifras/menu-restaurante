@@ -1,68 +1,71 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: #333;
     margin: 0;
     padding: 0;
-}
-
-.container {
-    width: 60%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 header {
-    text-align: center;
-    background: linear-gradient(to right, red, yellow, red);
+    background-color: #FFD700;
+    color: #0000FF;
     padding: 20px;
-    color: blue;
+    border-bottom: 5px solid #FF0000;
 }
 
 header h1 {
-    margin: 0;
     font-size: 2.5em;
+    margin: 0;
 }
 
-#search {
-    width: 100%;
+#search-bar {
+    width: 50%;
     padding: 10px;
-    margin-top: 20px;
-    font-size: 1.2em;
+    margin-top: 10px;
+    font-size: 1em;
 }
 
-.menu {
-    margin-top: 20px;
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
-.category {
-    margin-bottom: 20px;
+.menu-category {
+    width: 50%;
+    margin: 20px 0;
+    text-align: left;
 }
 
-.category-header {
-    background-color: #eaeaea;
+.menu-category h2 {
+    background-color: #0000FF;
+    color: #FFFFFF;
     padding: 10px;
     cursor: pointer;
-    border: 1px solid #ccc;
-    margin: 0;
-    font-size: 1.5em;
-    color: #333;
-}
-
-.category-content {
-    display: none;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-top: none;
 }
 
 .menu-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+    display: none;
+    background-color: #F9F9F9;
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #DDD;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #FFD700;
+}
+
+.menu-item h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    margin: 0;
+    font-size: 1em;
 }
 
 .menu-item img {
@@ -70,23 +73,4 @@ header h1 {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-right: 20px;
-}
-
-.menu-item h3 {
-    margin: 0 0 5px;
-    font-size: 1.2em;
-}
-
-.menu-item p {
-    margin: 0;
-}
-
-.price {
-    font-weight: bold;
-    color: red;
-}
-
-.menu-item:hover {
-    background-color: yellow;
 }
