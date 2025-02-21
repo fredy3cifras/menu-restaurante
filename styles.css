@@ -82,6 +82,13 @@ header h1 {
     color: #666;
 }
 
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 768px) {
     .menu-category {
         width: 90%; /* Adjust width for small screens */
