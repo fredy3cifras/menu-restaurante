@@ -37,25 +37,4 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-
-    // Handle form submission using EmailJS
-    document.getElementById("contact-form").addEventListener("submit", function(event) {
-        event.preventDefault();  // Prevent the page from refreshing
-
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
-
-        emailjs.send("service_3lwc9xm", "template_k2qrxlh", {
-            name: name,
-            email: email,
-            message: message
-        })
-        .then(function(response) {
-            alert("Message sent successfully!");
-            document.getElementById("contact-form").reset();  // Reset the form after sending
-        }, function(error) {
-            alert("Failed to send the message, please try again.");
-        });
-    });
 });
