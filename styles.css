@@ -61,4 +61,59 @@ header h1 {
 
 .menu-item {
     background-color: #fff;
-    padding: 20
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); /* Adds hover effect for interactivity */
+}
+
+.menu-item h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.menu-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu-category {
+        width: 90%; /* Adjust width for small screens */
+    }
+
+    #searchBar {
+        width: 90%; /* Makes search bar wider on small screens */
+    }
+
+    .menu-category h2 {
+        font-size: 1.2rem;
+        padding: 10px 0; /* Smaller padding for mobile view */
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr; /* Switch to one column layout for mobile */
+    }
+    
+    /* Ensures the menu categories take up the full width in mobile view */
+    .menu-category {
+        width: 100%;
+    }
+
+    .menu-category h2 {
+        font-size: 1rem;
+        padding: 12px 0; /* Adjust padding for mobile */
+    }
+}
