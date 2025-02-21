@@ -1,63 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colombian Restaurant Menu</title>
+    <title>Menú Restaurante Colombiano</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Colombian Restaurant Menu</h1>
-        <input type="text" id="search-bar" placeholder="Search...">
+        <h1>Menú del Restaurante Colombiano</h1>
+        <input type="text" id="searchBar" placeholder="Buscar en el menú...">
     </header>
     <main>
         <section class="menu-category" id="entradas">
             <h2>Entradas (Appetizers)</h2>
             <div class="menu-item">
-                <h3>Arepa - $3.00</h3>
-                <p>Delicious arepa filled with cheese and other traditional ingredients.</p>
                 <img src="images/arepa.jpg" alt="Arepa">
+                <div>
+                    <h3>Arepa</h3>
+                    <p>Arepa deliciosa rellena de queso y otros ingredientes tradicionales.</p>
+                    <span class="price">$3.00</span>
+                </div>
             </div>
             <div class="menu-item">
-                <h3>Empanada - $2.50</h3>
-                <p>Crispy empanada filled with meat, chicken, or potato, perfect for sharing.</p>
+                <h3>Empanada</h3>
+                <p>Empanada crujiente rellena de carne, pollo o papa, ideal para compartir.</p>
+                <span class="price">$2.50</span>
             </div>
-            <!-- Add other menu items here -->
+            <div class="menu-item">
+                <h3>Patacones</h3>
+                <p>Tostones de plátano fritos, perfectos como acompañante.</p>
+                <span class="price">$3.50</span>
+            </div>
+            <!-- Agrega más ítems de entradas aquí -->
         </section>
         <section class="menu-category" id="platos-fuertes">
             <h2>Platos Fuertes (Main Dishes)</h2>
             <div class="menu-item">
-                <h3>Ajiaco - $8.00</h3>
-                <p>A traditional Bogotá soup with chicken, potatoes, and corn.</p>
+                <h3>Ajiaco</h3>
+                <p>Sopa tradicional de Bogotá con pollo, papas y maíz.</p>
+                <span class="price">$8.00</span>
             </div>
-            <!-- Add other menu items here -->
+            <div class="menu-item">
+                <h3>Sancocho</h3>
+                <p>Sopa contundente con carne, pollo o cerdo, servida con arroz y aguacate.</p>
+                <span class="price">$7.50</span>
+            </div>
+            <div class="menu-item">
+                <h3>Bandeja Paisa</h3>
+                <p>El plato más representativo de la región Paisa, con arroz, frijoles, carne, chicharrón y más.</p>
+                <span class="price">$10.00</span>
+            </div>
+            <!-- Agrega más ítems de platos fuertes aquí -->
         </section>
         <section class="menu-category" id="postres">
             <h2>Postres (Desserts)</h2>
             <div class="menu-item">
-                <h3>Arroz con Leche - $3.00</h3>
-                <p>Traditional Colombian dessert made with rice, milk, cinnamon, and sugar.</p>
+                <h3>Arroz con Leche</h3>
+                <p>Postre tradicional colombiano hecho con arroz, leche, canela y azúcar.</p>
+                <span class="price">$3.00</span>
             </div>
-            <!-- Add other menu items here -->
+            <div class="menu-item">
+                <h3>Arequipe</h3>
+                <p>Dulce de leche colombiano, ideal para untar en pan o comer solo.</p>
+                <span class="price">$3.50</span>
+            </div>
+            <div class="menu-item">
+                <h3>Natilla</h3>
+                <p>Postre cremoso de leche y maicena, típico de Navidad.</p>
+                <span class="price">$4.00</span>
+            </div>
+            <!-- Agrega más ítems de postres aquí -->
         </section>
         <section class="menu-category" id="bebidas">
             <h2>Bebidas (Drinks)</h2>
             <div class="menu-item">
-                <h3>Jugo de Lulo - $2.50</h3>
-                <p>A refreshing drink made from lulo fruit, typical of the Andean region.</p>
+                <h3>Jugo de Lulo</h3>
+                <p>Bebida refrescante hecha con fruta de lulo, típica de la región andina.</p>
+                <span class="price">$2.50</span>
             </div>
-            <!-- Add other menu items here -->
+            <div class="menu-item">
+                <h3>Agua de Panela</h3>
+                <p>Bebida caliente hecha con panela, ideal para el clima frío.</p>
+                <span class="price">$2.00</span>
+            </div>
+            <div class="menu-item">
+                <h3>Jugo de Mora</h3>
+                <p>Jugo refrescante hecho con mora, una fruta colombiana.</p>
+                <span class="price">$2.50</span>
+            </div>
+            <!-- Agrega más ítems de bebidas aquí -->
         </section>
         <section class="menu-category" id="batidos">
             <h2>Batidos (Smoothies)</h2>
             <div class="menu-item">
-                <h3>Batido de Mango - $3.50</h3>
-                <p>A refreshing mango smoothie made with milk, perfect for hot days.</p>
+                <h3>Batido de Mango</h3>
+                <p>Batido refrescante de mango con leche, perfecto para días calurosos.</p>
+                <span class="price">$3.50</span>
             </div>
-            <!-- Add other menu items here -->
+            <div class="menu-item">
+                <h3>Batido de Guanábana</h3>
+                <p>Batido tropical de guanábana, perfecto para una mezcla de sabores.</p>
+                <span class="price">$3.50</span>
+            </div>
+            <div class="menu-item">
+                <h3>Batido de Fresa</h3>
+                <p>Batido hecho con fresas frescas y leche.</p>
+                <span class="price">$3.00</span>
+            </div>
+            <!-- Agrega más ítems de batidos aquí -->
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
