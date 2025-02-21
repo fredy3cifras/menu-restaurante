@@ -2,14 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const categories = document.querySelectorAll(".menu-category h2");
     const searchBar = document.getElementById("searchBar");
 
-    // Mostrar y ocultar los ítems de las categorías al hacer clic
+    // Mostrar y ocultar los ítems de las categorías al hacer clic (solo manualmente)
     categories.forEach(category => {
         category.addEventListener("click", () => {
             const items = category.nextElementSibling;
             if (items.style.display === "none" || items.style.display === "") {
-                items.style.display = "grid";  // Mostrar ítems
+                items.style.display = "grid";  // Mostrar ítems al hacer clic
             } else {
-                items.style.display = "none";  // Ocultar ítems
+                items.style.display = "none";  // Ocultar ítems al hacer clic
             }
         });
     });
