@@ -1,76 +1,76 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: white;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 header {
-    background-color: #FFD700;
-    color: #0000FF;
-    padding: 20px;
-    border-bottom: 5px solid #FF0000;
+    background-color: #ffd700;
+    color: #0000ff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    border-left: 5px solid #ff0000;
+    border-right: 5px solid #ff0000;
 }
 
 header h1 {
-    font-size: 2.5em;
     margin: 0;
 }
 
-#search-bar {
-    width: 50%;
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 1em;
+#searchBar {
+    width: 80%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+main {
+    width: 50%;
+    margin: 0 auto;
 }
 
 .menu-category {
-    width: 50%;
-    margin: 20px 0;
-    text-align: left;
+    margin-bottom: 2rem;
 }
 
 .menu-category h2 {
-    background-color: #0000FF;
-    color: #FFFFFF;
-    padding: 10px;
+    background-color: #ff0000;
+    color: #0000ff;
+    padding: 0.5rem;
     cursor: pointer;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .menu-item {
     display: none;
-    background-color: #F9F9F9;
-    padding: 10px;
-    border-bottom: 1px solid #DDD;
-    transition: background-color 0.3s;
-}
-
-.menu-item:hover {
-    background-color: #FFD700;
-}
-
-.menu-item h3 {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-.menu-item p {
-    margin: 0;
-    font-size: 1em;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
 }
 
 .menu-item img {
     width: 200px;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.menu-item p {
+    margin: 0.5rem 0;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #ff0000;
 }
