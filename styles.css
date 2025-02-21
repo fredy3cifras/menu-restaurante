@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ header h1 {
 }
 
 #searchBar {
-    width: 80%;
+    width: 75%;
     padding: 10px;
     margin-top: 30px; /* Added more space to move the search bar further down */
     font-size: 16px;
@@ -31,7 +31,7 @@ header h1 {
 }
 
 .menu-category {
-    width: 50%; /* Keeps it reduced to half the width */
+    width: 50%; /* Reduced to half the width */
     margin: 20px auto;
     text-align: center;
     border-radius: 8px; /* Softens the corners */
@@ -89,60 +89,23 @@ header h1 {
     margin-bottom: 10px;
 }
 
-.contact-section {
-    background-color: #f9f9f9; /* Light cream color */
+.business-section {
+    background-color: #fffbf2; /* Pastel background color */
     padding: 40px;
     text-align: center;
+    font-family: 'Georgia', serif;
 }
 
-.contact-section h2 {
-    font-size: 2rem;
+.business-section h2 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #333;
 }
 
-.contact-info p {
+.business-section p {
+    font-size: 1.2rem;
     margin: 10px 0;
-    font-size: 1rem;
-}
-
-form#contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.form-group input, .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-}
-
-form#contact-form button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-}
-
-form#contact-form button:hover {
-    background-color: #0056b3;
+    color: #666;
 }
 
 @media (max-width: 768px) {
