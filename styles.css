@@ -9,9 +9,9 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(to right, rgba(255, 255, 0, 0.4), rgba(0, 0, 255, 0.4) 33%, rgba(0, 0, 255, 0.4) 66%, rgba(255, 0, 0, 0.4));
+    background: linear-gradient(to right, yellow, yellow, blue, yellow, yellow); /* Colombian flag colors */
     color: white;
-    filter: brightness(1.25) saturate(1.50) contrast(1.25); /* Incremento la saturación a 1.5 para hacerlo más llamativo */
+    filter: brightness(1.25) saturate(1.25) contrast(1.25); /* Increase brightness, saturation, and contrast by 25% */
 }
 
 header h1 {
@@ -50,7 +50,7 @@ header h1 {
     font-size: 1.5rem;
     border-radius: 8px 8px 0 0;
     text-transform: uppercase;
-    filter: saturate(0.65); /* Decrease blue saturation by 35% */
+    filter: saturate(0.75); /* Decrease blue saturation by 25% */
 }
 
 .menu-items {
@@ -105,7 +105,7 @@ header h1 {
     color: rgba(51, 51, 51, 0.8);
 }
 
-.business-section p {
+business-section p {
     font-size: 1.2rem;
     margin: 10px 0;
     color: rgba(102, 102, 102, 0.8);
