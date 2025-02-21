@@ -27,6 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
             // Verificar si el nombre o la descripción contienen el término de búsqueda
             if (name.includes(query) || description.includes(query)) {
                 item.style.display = "block";  // Mostrar el plato que coincide con la búsqueda
+                // Mostrar la categoría si no está visible
+                const category = item.closest(".menu-items");
+                if (category.style.display === "none" || category.style.display === "") {
+                    category.style.display = "grid";
+                }
             } else {
                 item.style.display = "none";  // Ocultar el plato si no coincide
             }
