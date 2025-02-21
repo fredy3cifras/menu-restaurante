@@ -1,41 +1,58 @@
 document.addEventListener("DOMContentLoaded", () => {
     const categories = document.querySelectorAll(".menu-category h2");
     const searchBar = document.getElementById("searchBar");
+    let autoCollapseTimer;
 
-    // Mostrar y ocultar los ítems de las categorías al hacer clic (solo manualmente)
+    // Function to collapse all categories
+    const collapseAllCategories = () => {
+        const items = document.querySelectorAll(".menu-items");
+        items.forEach(item => {
+            item.style.display = "none";
+        });
+    };
+
+    // Function to reset the auto-collapse timer
+    const resetAutoCollapseTimer = () => {
+        clearTimeout(autoCollapseTimer);
+        autoCollapseTimer = setTimeout(collapseAllCategories, 300000); // 5 minutes (300,000 milliseconds)
+    };
+
+    // Show and hide category items on click (manual collapse)
     categories.forEach(category => {
         category.addEventListener("click", () => {
             const items = category.nextElementSibling;
             if (items.style.display === "none" || items.style.display === "") {
-                items.style.display = "grid";  // Mostrar ítems al hacer clic
+                items.style.display = "grid";  // Show items on click
             } else {
-                items.style.display = "none";  // Ocultar ítems al hacer clic
+                items.style.display = "none";  // Hide items on click
             }
+            resetAutoCollapseTimer(); // Reset the timer on user interaction
         });
     });
 
-    // Filtrar elementos al escribir en el buscador
+    // Filter items as the user types in the search bar
     searchBar.addEventListener("input", () => {
-        const query = searchBar.value.toLowerCase();  // Obtener el valor de la búsqueda
+        const query = searchBar.value.toLowerCase();  // Get the search value
         const items = document.querySelectorAll(".menu-item");
 
-        // Recorremos todos los platos
+        // Iterate through all the items
         items.forEach(item => {
-            const name = item.querySelector("h3").textContent.toLowerCase();  // Nombre del plato
-            const description = item.querySelector("p").textContent.toLowerCase();  // Descripción del plato
+            const name = item.querySelector("h3").textContent.toLowerCase();  // Item name
+            const description = item.querySelector("p").textContent.toLowerCase();  // Item description
 
-            // Verificar si el nombre o la descripción contienen el término de búsqueda
+            // Check if the name or description contains the search term
             if (name.includes(query) || description.includes(query)) {
-                item.style.display = "block";  // Mostrar el plato que coincide con la búsqueda
-                // Mostrar la categoría si no está visible
+                item.style.display = "block";  // Show item if it matches the search
+                // Show the category if it's not visible
                 const category = item.closest(".menu-items");
                 if (category.style.display === "none" || category.style.display === "") {
                     category.style.display = "grid";
                 }
             } else {
-                item.style.display = "none";  // Ocultar el plato si no coincide
+                item.style.display = "none";  // Hide item if it does not match the search
             }
         });
+        resetAutoCollapseTimer(); // Reset the timer on user interaction
     });
 
     // Handle form submission using EmailJS
@@ -57,5 +74,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }, function(error) {
             alert("Failed to send the message, please try again.");
         });
+        resetAutoCollapseTimer(); // Reset the timer on user interaction
     });
+
+    // Initial timer setup
+    resetAutoCollapseTimer();
 });
