@@ -9,9 +9,9 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(to right, yellow, blue, red), linear-gradient(to left, yellow, blue, red);
+    background: linear-gradient(to right, yellow, blue, red); /* Colombian flag colors */
     color: white;
-    filter: brightness(1.25) saturate(1.25) contrast(1.25); /* Increase brightness, saturation, and contrast by 25% */
+    filter: brightness(1.25) saturate(0.80) contrast(1.25); /* Increase brightness and contrast by 25%, decrease saturation by 20% */
 }
 
 header h1 {
@@ -50,7 +50,7 @@ header h1 {
     font-size: 1.5rem;
     border-radius: 8px 8px 0 0;
     text-transform: uppercase;
-    filter: saturate(0.75); /* Decrease blue saturation by 25% */
+    filter: saturate(0.80); /* Decrease blue saturation by 20% */
 }
 
 .menu-items {
