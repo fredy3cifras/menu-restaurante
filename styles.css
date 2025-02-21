@@ -11,7 +11,7 @@ header {
     padding: 20px;
     background: linear-gradient(to right, rgba(255, 255, 0, 0.4), rgba(0, 0, 255, 0.4) 33%, rgba(0, 0, 255, 0.4) 66%, rgba(255, 0, 0, 0.4));
     color: white;
-    filter: brightness(0.90) saturate(1.20); /* Decrease brightness by 10%, increase saturation by 20% */
+    filter: brightness(1.25) saturate(1.25) contrast(1.25); /* Increase brightness, saturation, and contrast by 25% */
 }
 
 header h1 {
