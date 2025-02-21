@@ -41,7 +41,7 @@ header h1 {
 }
 
 .menu-category h2 {
-    background-color: #6a9fd4; /* Softer blue color */
+    background-color: #003366; /* Darker, brighter, and more vivid blue */
     color: white;
     padding: 15px 0;
     margin: 0;
@@ -49,7 +49,7 @@ header h1 {
     font-size: 1.5rem;
     border-radius: 8px 8px 0 0;
     text-transform: uppercase;
-    filter: saturate(0.80); /* Decrease blue saturation by 20% */
+    filter: saturate(1.15) brightness(1.15); /* Increase saturation and brightness by 15% */
 }
 
 .menu-items {
