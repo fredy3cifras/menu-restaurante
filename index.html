@@ -1,355 +1,248 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Restaurante Colombiano</title>
+    <title>Colombian Restaurant Menu</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
-    <div class="header-title">
-        <div class="flag-left"></div>
-        <h1>Menú Restaurante Colombiano</h1>
-        <div class="flag-right"></div>
-    </div>
-</header>
-
-<div class="menu">
-    <!-- Sección de Entradas -->
-    <div class="category">
-        <h2>Entradas</h2>
-        <div class="category-content">
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Arepa</h3>
-                    <p>Deliciosa arepa rellena con queso y otros ingredientes tradicionales.</p>
-                    <span class="price">$3.00</span> <!-- Precio en dólares -->
+    <div class="container">
+        <header>
+            <h1>Colombian Restaurant Menu</h1>
+            <input type="text" id="search" placeholder="Search for a dish...">
+        </header>
+        <div class="menu">
+            <div class="category" id="entradas">
+                <h2 class="category-header">Entradas (Appetizers)</h2>
+                <div class="category-content">
+                    <div class="menu-item">
+                        <img src="arepa.jpg" alt="Arepa">
+                        <div class="item-info">
+                            <h3>Arepa</h3>
+                            <p>Delicious arepa filled with cheese and other traditional ingredients.</p>
+                            <p class="price">$3.00</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Empanada</h3>
+                        <p>Crispy empanada filled with meat, chicken, or potato, perfect for sharing.</p>
+                        <p class="price">$2.50</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Patacones</h3>
+                        <p>Fried smashed plantains, perfect as a side dish.</p>
+                        <p class="price">$3.50</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Arepa de Choclo</h3>
+                        <p>Sweet arepa made from tender corn, ideal for breakfast.</p>
+                        <p class="price">$4.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Cachama Frita</h3>
+                        <p>Fried cachama, a typical fish from the Amazon region.</p>
+                        <p class="price">$6.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Chicharrón</h3>
+                        <p>Crunchy chicharrón, a Colombian classic.</p>
+                        <p class="price">$5.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Churros</h3>
+                        <p>Churros filled with dulce de leche, perfect for breakfast or a snack.</p>
+                        <p class="price">$2.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Empanaditas de Pollo</h3>
+                        <p>Small empanadas filled with chicken, great for dipping in sauces.</p>
+                        <p class="price">$3.00</p>
+                    </div>
                 </div>
-                <div class="item-image">
-                    <img src="images/arepa.jpg" alt="Arepa" width="100%" />
+            </div>
+            <div class="category" id="platos-fuertes">
+                <h2 class="category-header">Platos Fuertes (Main Dishes)</h2>
+                <div class="category-content">
+                    <div class="menu-item">
+                        <h3>Ajiaco</h3>
+                        <p>A traditional Bogotá soup with chicken, potatoes, and corn.</p>
+                        <p class="price">$8.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Sancocho</h3>
+                        <p>A hearty soup with meat, chicken, or pork, served with rice and avocado.</p>
+                        <p class="price">$7.50</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Bandeja Paisa</h3>
+                        <p>The most representative dish of the Paisa region, with rice, beans, meat, chicharrón, and more.</p>
+                        <p class="price">$10.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Lechona</h3>
+                        <p>Roasted pig stuffed with rice and spices, a traditional recipe.</p>
+                        <p class="price">$9.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Sobrebarriga</h3>
+                        <p>Beef in sauce with potatoes and salad.</p>
+                        <p class="price">$8.50</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Cordobesa</h3>
+                        <p>Beef served with potatoes, rice, salad, and small empanadas.</p>
+                        <p class="price">$8.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Arroz con Pollo</h3>
+                        <p>Flavorful rice with chicken, spices, vegetables, and seasoning.</p>
+                        <p class="price">$7.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Chuletas de Cerdo</h3>
+                        <p>Fried pork chops served with potatoes and salad.</p>
+                        <p class="price">$7.50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category" id="postres">
+                <h2 class="category-header">Postres (Desserts)</h2>
+                <div class="category-content">
+                    <div class="menu-item">
+                        <h3>Arroz con Leche</h3>
+                        <p>Traditional Colombian dessert made with rice, milk, cinnamon, and sugar.</p>
+                        <p class="price">$3.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Arequipe</h3>
+                        <p>Colombian dulce de leche, perfect for spreading on bread or eating on its own.</p>
+                        <p class="price">$3.50</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Natilla</h3>
+                        <p>A creamy milk and cornstarch dessert, typical during Christmas.</p>
+                        <p class="price">$4.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Torta de Pargo</h3>
+                        <p>Delicious cake made with pargo fish and honey, typical of the Caribbean coast.</p>
+                        <p class="price">$5.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Buñuelos</h3>
+                        <p>Fried cheese-filled dough balls, a classic Colombian treat.</p>
+                        <p class="price">$2.50</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Torta de Tres Leches</h3>
+                        <p>A cake soaked in three kinds of milk, very popular in Colombia.</p>
+                        <p class="price">$3.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Coconut Cake</h3>
+                        <p>A cake made with coconut, perfect for pairing with coffee.</p>
+                        <p class="price">$4.50</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Helados de Frutas</h3>
+                        <p>Refreshing ice creams made from natural Colombian fruits.</p>
+                        <p class="price">$3.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category" id="bebidas">
+                <h2 class="category-header">Bebidas (Drinks)</h2>
+                <div class="category-content">
+                    <div class="menu-item">
+                        <h3>Jugo de Lulo</h3>
+                        <p>A refreshing drink made from lulo fruit, typical of the Andean region.</p>
+                        <p class="price">$2.50</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Agua de Panela</h3>
+                        <p>A hot beverage made from panela, ideal for cold weather.</p>
+                        <p class="price">$2.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Jugo de Mora</h3>
+                        <p>A refreshing juice made from mora, a native Colombian fruit.</p>
+                        <p class="price">$2.50</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Jugo de Mango</h3>
+                        <p>A refreshing juice made from mango, common in the Caribbean region.</p>
+                        <p class="price">$3.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Jugo de Maracuyá</h3>
+                        <p>A refreshing drink made from passion fruit, with both sour and sweet flavors.</p>
+                        <p class="price">$3.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Jugo de Guayaba</h3>
+                        <p>A natural guava drink, delicious and refreshing.</p>
+                        <p class="price">$2.50</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Agua de Coco</h3>
+                        <p>A refreshing coconut water drink, very popular along Colombia's coasts.</p>
+                        <p class="price">$3.50</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Jugo de Piña</h3>
+                        <p>A delicious pineapple juice with a hint of mint.</p>
+                        <p class="price">$2.50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category" id="batidos">
+                <h2 class="category-header">Batidos (Smoothies)</h2>
+                <div class="category-content">
+                    <div class="menu-item">
+                        <h3>Batido de Mango</h3>
+                        <p>A refreshing mango smoothie made with milk, perfect for hot days.</p>
+                        <p class="price">$3.50</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Batido de Guanábana</h3>
+                        <p>A tropical smoothie made with guanábana, perfect for a mix of flavors.</p>
+                        <p class="price">$3.50</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Batido de Fresa</h3>
+                        <p>A smoothie made with fresh strawberries and milk.</p>
+                        <p class="price">$3.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Batido de Papaya</h3>
+                        <p>A smoothie made with sweet and nutritious papaya.</p>
+                        <p class="price">$3.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Batido de Piña</h3>
+                        <p>A tropical pineapple smoothie with milk.</p>
+                        <p class="price">$3.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Batido de Mora</h3>
+                        <p>A refreshing smoothie made with mora, very popular in Colombia.</p>
+                        <p class="price">$3.50</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Batido de Lulo</h3>
+                        <p>A refreshing smoothie made with lulo fruit, from the Andean region.</p>
+                        <p class="price">$3.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Batido de Guayaba</h3>
+                        <p>A tropical smoothie made with guava, a delicious fruit.</p>
+                        <p class="price">$3.50</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Sección de Platos Fuertes -->
-    <div class="category">
-        <h2>Platos Fuertes</h2>
-        <div class="category-content">
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Empanada</h3>
-                    <p>Empanada crujiente rellena de carne, pollo o papa, ideal para compartir.</p>
-                    <span class="price">$2.50</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Patacones</h3>
-                    <p>Plátano frito aplastado, perfecto para acompañar cualquier plato.</p>
-                    <span class="price">$3.50</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Arepa de Choclo</h3>
-                    <p>Arepa dulce hecha con maíz tierno, ideal para el desayuno.</p>
-                    <span class="price">$4.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Cachama Frita</h3>
-                    <p>Deliciosa fritura de cachama, pescado típico de la región amazónica.</p>
-                    <span class="price">$6.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Chicharrón</h3>
-                    <p>El clásico chicharrón crujiente, típico en las entradas de Colombia.</p>
-                    <span class="price">$5.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Churros</h3>
-                    <p>Churros rellenos con dulce de leche, perfectos para el desayuno o merienda.</p>
-                    <span class="price">$2.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Empanaditas de Pollo</h3>
-                    <p>Empanaditas rellenas de pollo, perfectas para acompañar con salsas.</p>
-                    <span class="price">$3.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-<script src="script.js"></script>
-
-</body>
-</html>
-
-    <!-- Sección de Platos Principales -->
-    <div class="category">
-        <h2>Platos Principales</h2>
-        <div class="category-content">
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Ajiaco</h3>
-                    <p>Un delicioso caldo con pollo, papa y mazorca, típico de Bogotá.</p>
-                    <span class="price">$8.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Sancocho</h3>
-                    <p>Sopa espesa con carne, pollo o cerdo acompañada de arroz y aguacate.</p>
-                    <span class="price">$7.50</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Bandeja Paisa</h3>
-                    <p>El plato más representativo de la región paisa, con arroz, frijoles, carne, chicharrón y más.</p>
-                    <span class="price">$10.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Lechona</h3>
-                    <p>Cerdo relleno con arroz, arroz y especias, una receta tradicional.</p>
-                    <span class="price">$9.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Sobrebarriga</h3>
-                    <p>Corte de carne en salsa con papas y ensalada.</p>
-                    <span class="price">$8.50</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Cordobesa</h3>
-                    <p>Carne con papas, arroz, ensalada y empanaditas.</p>
-                    <span class="price">$8.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Arroz con Pollo</h3>
-                    <p>Arroz sabroso con pollo, especias, verduras y un toque de sazón.</p>
-                    <span class="price">$7.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Chuletas de Cerdo</h3>
-                    <p>Chuletas fritas acompañadas de papas y ensalada.</p>
-                    <span class="price">$7.50</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sección de Postres -->
-    <div class="category">
-        <h2>Postres</h2>
-        <div class="category-content">
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Arroz con leche</h3>
-                    <p>Postre tradicional colombiano hecho con arroz, leche, canela y azúcar.</p>
-                    <span class="price">$3.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Arequipe</h3>
-                    <p>Dulce de leche colombiano, ideal para untar o comer solo.</p>
-                    <span class="price">$3.50</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Natilla</h3>
-                    <p>Postre de crema de leche y maicena, tradicional de Navidad.</p>
-                    <span class="price">$4.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Torta de Pargo</h3>
-                    <p>Deliciosa torta hecha con pargo y miel, típica de la costa Caribe colombiana.</p>
-                    <span class="price">$5.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Buñuelos</h3>
-                    <p>Deliciosos buñuelos fritos, hechos con queso y masa dulce.</p>
-                    <span class="price">$2.50</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Torta de Tres Leches</h3>
-                    <p>Torta bañada en tres tipos de leche, muy popular en Colombia.</p>
-                    <span class="price">$3.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Coconut Cake</h3>
-                    <p>Torta de coco, ideal para acompañar con café.</p>
-                    <span class="price">$4.50</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Helados de Frutas</h3>
-                    <p>Helados refrescantes hechos con frutas naturales colombianas.</p>
-                    <span class="price">$3.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sección de Bebidas -->
-    <div class="category">
-        <h2>Bebidas</h2>
-        <div class="category-content">
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Jugo de Lulo</h3>
-                    <p>Bebida refrescante hecha con la fruta de lulo, típica de la región andina.</p>
-                    <span class="price">$2.50</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Agua de Panela</h3>
-                    <p>Bebida caliente hecha con panela, ideal para el frío.</p>
-                    <span class="price">$2.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Jugo de Mora</h3>
-                    <p>Refrescante jugo hecho con mora, fruta autóctona colombiana.</p>
-                    <span class="price">$2.50</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Jugo de Mango</h3>
-                    <p>Refrescante jugo hecho con mango, muy común en la región Caribe.</p>
-                    <span class="price">$3.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Jugo de Maracuyá</h3>
-                    <p>Bebida refrescante hecha con maracuyá, de un sabor agrio y dulce a la vez.</p>
-                    <span class="price">$3.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Jugo de Guayaba</h3>
-                    <p>Bebida natural de guayaba, con un sabor delicioso y refrescante.</p>
-                    <span class="price">$2.50</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Agua de Coco</h3>
-                    <p>Bebida refrescante hecha con el agua de coco, muy popular en las costas colombianas.</p>
-                    <span class="price">$3.50</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Jugo de Piña</h3>
-                    <p>Delicioso jugo de piña natural con un toque de menta.</p>
-                    <span class="price">$2.50</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sección de Batidos -->
-    <div class="category">
-        <h2>Batidos</h2>
-        <div class="category-content">
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Batido de Mango</h3>
-                    <p>Refrescante batido hecho con mango y leche, ideal para los días calurosos.</p>
-                    <span class="price">$3.50</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Batido de Guanábana</h3>
-                    <p>Batido de guanábana, una mezcla tropical perfecta.</p>
-                    <span class="price">$3.50</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Batido de Fresa</h3>
-                    <p>Batido hecho con fresas frescas y leche.</p>
-                    <span class="price">$3.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Batido de Papaya</h3>
-                    <p>Batido con papaya, una fruta dulce y muy nutritiva.</p>
-                    <span class="price">$3.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Batido de Piña</h3>
-                    <p>Batido tropical de piña con un toque de leche.</p>
-                    <span class="price">$3.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Batido de Mora</h3>
-                    <p>Batido refrescante de mora, muy popular en Colombia.</p>
-                    <span class="price">$3.50</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Batido de Lulo</h3>
-                    <p>Batido refrescante hecho con lulo, la fruta de la región andina.</p>
-                    <span class="price">$3.00</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Batido de Guayaba</h3>
-                    <p>Batido tropical hecho con guayaba, una fruta deliciosa.</p>
-                    <span class="price">$3.50</span> <!-- Precio en dólares -->
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
