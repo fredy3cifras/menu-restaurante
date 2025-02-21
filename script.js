@@ -1,4 +1,4 @@
-ddocument.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     const categories = document.querySelectorAll(".menu-category h2");
     const searchBar = document.getElementById("searchBar");
 
