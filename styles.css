@@ -46,6 +46,10 @@ header {
     max-width: 1200px;
 }
 
+.category {
+    margin-bottom: 15px; /* Añadido espacio entre categorías */
+}
+
 .category h2 {
     background-color: #0033A0;
     color: white;
@@ -54,6 +58,12 @@ header {
     text-align: center;
     border-radius: 5px;
     margin: 10px 0;
+    font-size: 1.5em; /* Ajustado tamaño de fuente */
+    transition: background-color 0.3s ease; /* Añadido efecto suave para el hover */
+}
+
+.category h2:hover {
+    background-color: #FFD100; /* Cambio de color al pasar el ratón */
 }
 
 .category-content {
@@ -61,16 +71,23 @@ header {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; /* Añadido borde redondeado a las secciones */
 }
 
 .menu-item {
     display: flex;
+    align-items: center;
     margin-bottom: 20px;
 }
 
 .item-info {
     max-width: 500px;
     margin-left: 20px; /* Añadir espacio entre imagen y texto */
+}
+
+.item-image {
+    max-width: 150px; /* Limitar el tamaño de las imágenes */
+    margin-right: 20px; /* Añadir espacio entre la imagen y el texto */
 }
 
 h3 {
@@ -95,5 +112,21 @@ p {
     }
     to {
         opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: column; /* Hacer que los items del menú se apilen en pantallas pequeñas */
+        align-items: flex-start;
+    }
+
+    .item-info {
+        margin-left: 0;
+    }
+
+    .item-image {
+        max-width: 100%; /* Las imágenes ocupan el 100% del ancho */
+        margin-bottom: 15px; /* Añadir espacio entre imagen y texto */
     }
 }
