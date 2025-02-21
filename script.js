@@ -1,24 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const categories = document.querySelectorAll('.menu-category h2');
-    const searchBar = document.getElementById('search-bar');
+    const headers = document.querySelectorAll('.menu-category h2');
+    const searchBar = document.getElementById('searchBar');
 
-    categories.forEach(category => {
-        category.addEventListener('click', () => {
-            const items = category.nextElementSibling;
-            items.style.display = (items.style.display === 'none' || !items.style.display) ? 'block' : 'none';
+    headers.forEach(header => {
+        header.addEventListener('click', () => {
+            const menuItems = header.nextElementSibling.querySelectorAll('.menu-item');
+            menuItems.forEach(item => item.style.display = item.style.display === 'block' ? 'none' : 'block');
         });
     });
 
-    searchBar.addEventListener('keyup', () => {
+    searchBar.addEventListener('input', () => {
         const query = searchBar.value.toLowerCase();
-        const items = document.querySelectorAll('.menu-item');
+        const menuItems = document.querySelectorAll('.menu-item');
 
-        items.forEach(item => {
+        menuItems.forEach(item => {
             const itemName = item.querySelector('h3').textContent.toLowerCase();
             if (itemName.includes(query)) {
                 item.style.display = 'block';
             } else {
                 item.style.display = 'none';
+            }
+        });
+
+        headers.forEach(header => {
+            const category = header.nextElementSibling;
+            const visibleItems = category.querySelectorAll('.menu-item[style*="block"]');
+            if (visibleItems.length > 0) {
+                category.style.display = 'block';
+            } else {
+                category.style.display = 'none';
             }
         });
     });
