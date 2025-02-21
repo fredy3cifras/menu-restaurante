@@ -128,7 +128,7 @@ header h1 {
     
     /* Ensures the menu categories take up the full width in mobile view */
     .menu-category {
-        width: 100%;
+        width: 90%;
     }
 
     .menu-category h2 {
