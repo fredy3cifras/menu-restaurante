@@ -8,71 +8,67 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(90deg, yellow 25%, blue 50%, red 25%); /* Gradiente ajustado */
+    background: linear-gradient(to right, yellow, blue 33%, blue 66%, red);
     color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 header h1 {
     margin: 0;
-    color: white; /* Título en blanco */
-    font-size: 2.5rem; /* Aumento del tamaño del texto */
-    font-style: italic; /* Título en cursiva */
+    font-size: 2.5em; /* Increase the size of the menu title */
 }
 
 #searchBar {
     width: 80%;
     padding: 10px;
-    margin-top: 30px; /* Aumento del margen superior para separar más la barra */
+    margin-top: 30px; /* Added more space to move the search bar further down */
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
     max-width: 400px;
-    margin-bottom: 20px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
+    display: block;
 }
 
 .menu-category {
-    width: 50%; /* Mantiene la mitad del ancho para las categorías */
+    width: 50%; /* Keeps it reduced to half the width */
     margin: 20px auto;
     text-align: center;
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Softens the corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
     background-color: white;
 }
 
 .menu-category h2 {
-    background: linear-gradient(90deg, red, yellow, red); /* Gradiente ajustado */
+    background: linear-gradient(90deg, red, yellow, red); /* Retaining the gradient effect */
     color: blue;
     padding: 15px 0;
     margin: 0;
     cursor: pointer;
     font-size: 1.5rem;
-    border-radius: 8px 8px 0 0; /* Bordes redondeados en la parte superior */
+    border-radius: 8px 8px 0 0;
     text-transform: uppercase;
 }
 
 .menu-items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Mejor control del tamaño de las columnas */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid size */
     gap: 20px;
     padding: 20px;
-    display: none; /* Ocultando elementos inicialmente */
-    margin-top: 15px; /* Espacio entre categorías y elementos */
+    display: none;
+    margin-top: 15px; /* More space between categories and items */
 }
 
 .menu-item {
     background-color: #fff;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra profunda */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     border-radius: 8px;
-    transition: transform 0.3s ease-in-out; /* Transición suave */
+    transition: transform 0.3s ease-in-out;
 }
 
 .menu-item:hover {
-    transform: translateY(-5px); /* Efecto interactivo */
+    transform: translateY(-5px); /* Adds hover effect for interactivity */
 }
 
 .menu-item h3 {
@@ -83,24 +79,34 @@ header h1 {
 
 .menu-item p {
     margin: 5px 0;
-    color: #666; /* Color más suave para descripciones */
+    color: #666;
 }
 
 @media (max-width: 768px) {
     .menu-category {
-        width: 100%; /* Asegura que las categorías ocupen el 100% del ancho en dispositivos pequeños */
+        width: 90%; /* Adjust width for small screens */
     }
 
     #searchBar {
-        width: 90%; /* Hace que la barra de búsqueda ocupe más espacio en pantallas pequeñas */
+        width: 90%; /* Makes search bar wider on small screens */
     }
 
     .menu-category h2 {
-        font-size: 1rem; /* Reduce el tamaño de los títulos en pantallas pequeñas */
-        padding: 12px 0;
+        font-size: 1.2rem;
+        padding: 10px 0; /* Smaller padding for mobile view */
     }
 
     .menu-items {
-        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        grid-template-columns: 1fr; /* Switch to one column layout for mobile */
+    }
+    
+    /* Ensures the menu categories take up the full width in mobile view */
+    .menu-category {
+        width: 100%;
+    }
+
+    .menu-category h2 {
+        font-size: 1rem;
+        padding: 12px 0; /* Adjust padding for mobile */
     }
 }
