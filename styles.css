@@ -8,7 +8,7 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(to right, yellow, blue 33%, blue 66%, red);
+    background: linear-gradient(to right, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5) 33%, rgba(0, 0, 255, 0.5) 66%, rgba(255, 0, 0, 0.5));
     color: white;
 }
 
@@ -36,12 +36,12 @@ header h1 {
     text-align: center;
     border-radius: 8px; /* Softens the corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .menu-category h2 {
-    background: linear-gradient(90deg, red, yellow, red); /* Retaining the gradient effect */
-    color: blue;
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 0.5), rgba(255, 0, 0, 0.5)); /* Retaining the gradient effect */
+    color: rgba(0, 0, 255, 0.7);
     padding: 15px 0;
     margin: 0;
     cursor: pointer;
@@ -60,7 +60,7 @@ header h1 {
 }
 
 .menu-item {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     border-radius: 8px;
@@ -74,12 +74,12 @@ header h1 {
 .menu-item h3 {
     margin: 0 0 10px;
     font-size: 1.2rem;
-    color: #333;
+    color: rgba(51, 51, 51, 0.8);
 }
 
 .menu-item p {
     margin: 5px 0;
-    color: #666;
+    color: rgba(102, 102, 102, 0.8);
 }
 
 .menu-item img {
@@ -90,7 +90,7 @@ header h1 {
 }
 
 .business-section {
-    background-color: #fffbf2; /* Pastel background color */
+    background-color: rgba(255, 251, 242, 0.9); /* Pastel background color */
     padding: 40px;
     text-align: center;
     font-family: 'Georgia', serif;
@@ -99,13 +99,13 @@ header h1 {
 .business-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #333;
+    color: rgba(51, 51, 51, 0.8);
 }
 
 .business-section p {
     font-size: 1.2rem;
     margin: 10px 0;
-    color: #666;
+    color: rgba(102, 102, 102, 0.8);
 }
 
 @media (max-width: 768px) {
