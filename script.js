@@ -1,21 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const categories = document.querySelectorAll(".menu-category h2");
     const searchBar = document.getElementById("searchBar");
-    let autoCollapseTimer;
-
-    // Function to collapse all categories
-    const collapseAllCategories = () => {
-        const items = document.querySelectorAll(".menu-items");
-        items.forEach(item => {
-            item.style.display = "none";
-        });
-    };
-
-    // Function to reset the auto-collapse timer
-    const resetAutoCollapseTimer = () => {
-        clearTimeout(autoCollapseTimer);
-        autoCollapseTimer = setTimeout(collapseAllCategories, 300000); // 5 minutes (300,000 milliseconds)
-    };
 
     // Show and hide category items on click (manual collapse)
     categories.forEach(category => {
@@ -26,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 items.style.display = "none";  // Hide items on click
             }
-            resetAutoCollapseTimer(); // Reset the timer on user interaction
         });
     });
 
@@ -52,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 item.style.display = "none";  // Hide item if it does not match the search
             }
         });
-        resetAutoCollapseTimer(); // Reset the timer on user interaction
     });
 
     // Handle form submission using EmailJS
@@ -74,9 +57,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }, function(error) {
             alert("Failed to send the message, please try again.");
         });
-        resetAutoCollapseTimer(); // Reset the timer on user interaction
     });
-
-    // Initial timer setup
-    resetAutoCollapseTimer();
 });
