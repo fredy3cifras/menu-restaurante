@@ -8,13 +8,15 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #fff;
+    background: linear-gradient(90deg, yellow 33%, blue 33%, blue 66%, red 66%);
+    color: white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 header h1 {
     margin: 0;
-    color: #007bff;
+    color: #007bff; /* Color del título del header */
+    font-size: 2rem; /* Mejora el tamaño del texto */
 }
 
 #searchBar {
@@ -24,58 +26,90 @@ header h1 {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    max-width: 400px; /* Añadido límite máximo de ancho */
+    margin-bottom: 20px; /* Espacio adicional debajo de la barra de búsqueda */
+    display: block; /* Asegura que la barra de búsqueda esté centrada */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu-category {
-    width: 50%;
+    width: 50%; /* Esto lo reducirá a la mitad del ancho */
     margin: 20px auto;
     text-align: center;
+    border-radius: 8px; /* Bordes redondeados para un diseño más suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra suave a las categorías */
+    background-color: white; /* Fondea las categorías con blanco */
 }
 
 .menu-category h2 {
     background: linear-gradient(90deg, red, yellow, red);
     color: blue;
-    padding: 10px 0;
+    padding: 15px 0;
     margin: 0;
     cursor: pointer;
+    font-size: 1.5rem; /* Aumenta el tamaño del texto para mayor legibilidad */
+    border-radius: 8px 8px 0 0; /* Bordes redondeados en la parte superior */
+    text-transform: uppercase; /* Mejora la visibilidad de los títulos */
 }
 
 .menu-items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Mejor control del tamaño de las columnas */
     gap: 20px;
     padding: 20px;
-    display: none;
+    display: none; /* Asegura que los ítems estén ocultos inicialmente */
+    margin-top: 15px; /* Agrega margen superior entre las categorías y los elementos del menú */
 }
 
 .menu-item {
     background-color: #fff;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra más profunda para los elementos */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out; /* Transición suave para interacción */
 }
 
-.menu-item img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 10px;
+.menu-item:hover {
+    transform: translateY(-5px); /* Efecto al pasar el mouse para que se vea interactivo */
 }
 
 .menu-item h3 {
     margin: 0 0 10px;
+    font-size: 1.2rem; /* Mejora la visibilidad de los nombres de los platos */
+    color: #333;
 }
 
 .menu-item p {
     margin: 5px 0;
+    color: #666; /* Mejora la legibilidad de las descripciones */
 }
 
 @media (max-width: 768px) {
     .menu-category {
-        width: 90%;
+        width: 90%; /* Ajusta el ancho en pantallas pequeñas */
     }
 
     #searchBar {
-        width: 90%;
+        width: 90%; /* Hace que la barra de búsqueda ocupe más espacio en pantallas pequeñas */
+    }
+
+    .menu-category h2 {
+        font-size: 1.2rem; /* Reduce el tamaño de los títulos en pantallas pequeñas */
+        padding: 10px 0; /* Menos espacio en títulos en pantallas pequeñas */
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+    
+    /* Ajuste específico para reducir el ancho de los botones de categoría en pantallas móviles */
+    .menu-category {
+        width: 100%; /* Asegura que las categorías ocupen el 100% del ancho en dispositivos móviles */
+    }
+
+    .menu-category h2 {
+        font-size: 1rem; /* Reduce el tamaño de los títulos para pantallas pequeñas */
+        padding: 12px 0; /* Menos padding para no ocupar mucho espacio */
     }
 }
