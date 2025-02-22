@@ -10,12 +10,16 @@ header {
     padding: 20px;
     background: linear-gradient(to right, yellow, blue, red); /* Colombian flag colors */
     color: white;
-    filter: saturate(0.75) brightness(0.85); /* Decrease saturation by 25% and vividness by 15% */
+    filter: saturate(0.75) brightness(1.10); /* Decrease saturation by 25% and increase brightness by 10% */
 }
 
 header h1 {
     margin: 0;
     font-size: 2.875em; /* Increase the size of the menu title by 15% */
+}
+
+header h1::after {
+    content: " RESTAURANTE NOCHES DE COLOMBIA"; /* Change menu name */
 }
 
 #searchBar {
